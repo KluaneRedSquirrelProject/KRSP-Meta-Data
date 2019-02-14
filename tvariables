@@ -1,0 +1,4 @@
+The trapping table contains generic variables called tvariable1, tvariable2, tvariable3, tvariable4.  These could mean many things and the meaning might not be consistent from year to year.
+
+tvariable1 - (2018-) Poop vial id in the format 000.00
+tvariable2 - (2018-) Poop time in the format hh.mm for 24hr time (e.g. 09.10 for 09:10)
