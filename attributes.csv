@@ -1,0 +1,435 @@
+fileName,variableName,description,unitText
+behaviour.csv,id,auto-filled with next available number,NA
+behaviour.csv,version,unknown,NA
+behaviour.csv,behaviour,recorded behavior (see behavior codes),NA
+behaviour.csv,color_left,color or combination of colours in the  left ear,NA
+behaviour.csv,color_right,color or combination of colours in the  right ear,NA
+behaviour.csv,comments,comments,NA
+behaviour.csv,date,date that behavior was recorded in the  field,yyyy-mm-dd
+behaviour.csv,date_created,date that behavior record was first  entered in database,yyyy-mm-dd hh:mm:ss
+behaviour.csv,detail,recorded behaviour detail (see behavior  codes),NA
+behaviour.csv,grid,two or three letters representing the  grid on which the data were collected,NA
+behaviour.csv,hand,indication of whether the squirrel was  eating left or right handed,NA
+behaviour.csv,last_updated,date that behavior was last updated in  database,yyyy-mm-dd hh:mm:ss
+behaviour.csv,locx,spatial x coordinate of the recorded  behaviour,NA
+behaviour.csv,locy,spatial y coordinate of the recorded  behaviour,NA
+behaviour.csv,mode,the manner in which the data were collected,NA
+behaviour.csv,observer,two or three letters representing  initials of observer,NA
+behaviour.csv,squirrel_id,unique numeric identifier for each  individual,NA
+behaviour.csv,tag_left,a unique 5 or 6 digit alpha-numeric code  for eartag in left ear,NA
+behaviour.csv,tag_right,a unique 5 or 6 digit alpha-numeric code  for eartag in right ear,NA
+behaviour.csv,time,time that behaviour was recorded in the  field,hh:mm:ss
+census.csv,id,auto-filled with next available number,NA
+census.csv,version,unknown,NA
+census.csv,census_date,date of census  (05/15/YYYY or 08/15/YYYY) or date of change in ownership,yyyy-mm-dd
+census.csv,colorlft,color or combination of colours in the  left ear,NA
+census.csv,colorrt,color or combination of colours in the right ear,NA
+census.csv,comments,comments,NA
+census.csv,date_created,date that census record was first entered  in database,yyyy-mm-dd hh:mm:ss
+census.csv,gr,two or three letters representing the  grid on which the data were collected,NA
+census.csv,last_updated,date that census record was last updated  in database,yyyy-mm-dd hh:mm:ss
+census.csv,locx,spatial x coordinate of midden owned,NA
+census.csv,locy,spatial y coordinate of midden owned,NA
+census.csv,obs,two or three letters representing the  observer initials,NA
+census.csv,reflo,reference location of the midden up to 5  alpha-numeric combinations including dots and minus signs,NA
+census.csv,sex,sex of the squirrel - Male (M) or Female  (F),NA
+census.csv,sq_fate,numeric code indicating the fate of the  squirrel in the census,NA
+census.csv,squirrel_id,unique numeric identifier for each  individual,NA
+census.csv,taglft,a unique 5 or 6 digit alpha-numeric code  for eartag in left ear,NA
+census.csv,tagrt,a unique 5 or 6 digit alpha-numeric code  for eartag in right ear,NA
+census.csv,trap,were the traps on the midden hung in the  fall - Y or N,NA
+cones.csv,Grid,two or three letters  representing the grid on which the data were collected,NA
+cones.csv,Year,year in which data were collected,NA
+cones.csv,Stake,grid stake nearest the cone count tree,NA
+cones.csv,LocX,spatial x coordinate of the cone count  tree,NA
+cones.csv,LocY,spatial y coordinate of the cone count  tree,NA
+cones.csv,DBH,diameter at breast height of cone count  tree (not updated each year),cm
+cones.csv,Distance,distance of cone count tree from the  nearest grid stake,m
+cones.csv,Direction,direction of cone count tree from nearest  grid stake,degrees
+cones.csv,Per,percent cover of cones in top 3 m of tree,NA
+cones.csv,New_Tree,is this a new tree counted for the first  time? - Y or N,NA
+cones.csv,Status,status of cone count tree relative to  amount of bark beetle damage,NA
+cones.csv,Count_Date,date on which the cones were counted,yyyy-mm-dd
+cones.csv,NumNew,number of new cones in top 3 m of tree,NA
+cones.csv,Comments,comments,NA
+dbaadmums.csv,id,auto-filled with next available number,NA
+dbaadmums.csv,squirrel_id,unique numeric identifier for each  individual,NA
+dbaadmums.csv,Grid,two or three letters representing the  grid on which the data were collected,NA
+dbaadmums.csv,BR,breeding status,NA
+dbaadmums.csv,YR,year in which data were collected,NA
+dbaadmums.csv,Age,age of female in current year,NA
+dbaadmums.csv,LN,litter number,NA
+dbaadmums.csv,tagLft,a unique 5 or 6 digit alpha-numeric code  for eartag in left ear,NA
+dbaadmums.csv,tagRt,a unique 5 or 6 digit alpha-numeric code  for eartag in right ear,NA
+dbaadmums.csv,tagLftNum,a unique 5 or 6 digit numeric code for  eartag in left ear,NA
+dbaadmums.csv,tagRtNum,a unique 5 or 6 digit numeric code for  eartag in right ear,NA
+dbaadmums.csv,locX,spatial x coordinate of the mother midden,NA
+dbaadmums.csv,locY,spatial y coordinate of the mother midden,NA
+dbaadmums.csv,Ratio,proportion of males in litter,NA
+dbaadmums.csv,Food,numeric code indicating type of  experimental manipulation,NA
+dbaadmums.csv,KidE,number of kids to emergence,NA
+dbaadmums.csv,KidW,number of kids to weaning,NA
+dbaadmums.csv,KidF,number of kids surviving to August 1,NA
+dbaadmums.csv,KidS,number of kids surviving to May 1,NA
+dbaadmums.csv,MWt,mother weight within 10 days after birth,grams
+dbaadmums.csv,MWt2,mother weight 1 week either side of day  70,grams
+dbaadmums.csv,LitWt,unknown,NA
+dbaadmums.csv,KidWt,unknown,NA
+dbaadmums.csv,EX,unknown,NA
+dbaadmums.csv,Pre,"litter in previous year? (1 = no, 2 =  yes)",NA
+dbaadmums.csv,LSize,litter size,NA
+dbaadmums.csv,Lsc,litter size code,NA
+dbaadmums.csv,FU,mother killed by human causes,NA
+dbaadmums.csv,Mom,unknown,NA
+dbaadmums.csv,MomB,mother behavior,NA
+dbaadmums.csv,MomM,fate of mother midden,NA
+dbaadmums.csv,MomS,mother location in spring,NA
+dbaadmums.csv,MomF,unknown,NA
+dbaadmums.csv,Marker,unique combination of LN + YR + taglft +  tagrt,NA
+dbaadmums.csv,BDate,estimated birthdate of any lost litters  (new in 1997),yyyy-mm-dd
+dbaadmums.csv,Experiment,unknown,NA
+dbabehaviour.csv,id,auto-filled with next available number,NA
+dbabehaviour.csv,squirrel_id,unique numeric identifier for each  individual,NA
+dbabehaviour.csv,tagLft,a unique 5 or 6 digit alpha-numeric code  for eartag in left ear,NA
+dbabehaviour.csv,tagRt,a unique 5 or 6 digit alpha-numeric code  for eartag in right ear,NA
+dbabehaviour.csv,tagLftNum,a unique 5 or 6 digit numeric code for  eartag in left ear,NA
+dbabehaviour.csv,tagRtNum,a unique 5 or 6 digit numeric code for  eartag in right ear,NA
+dbabehaviour.csv,grid,two or three letters representing the  grid on which the data were collected,NA
+dbabehaviour.csv,date,date that behavior was recorded in the  field,yyyy-mm-dd
+dbabehaviour.csv,obs,two or three letters representing the  observer initials,NA
+dbabehaviour.csv,col,combination of colours in the left/right  ears,NA
+dbabehaviour.csv,color_left,color or combination of colours in the left ear,NA
+dbabehaviour.csv,color_right,color or combination of colours in the right ear,NA
+dbabehaviour.csv,mode,the manner in which the data were collected,NA
+dbabehaviour.csv,time,time that behaviour was recorded in the  field,hh:mm:ss
+dbabehaviour.csv,bhour,hour that behaviour was recorded in the  field,NA
+dbabehaviour.csv,bmin,minute that behaviour was recorded in the  field,NA
+dbabehaviour.csv,bsec,second that behaviour was recorded in the  field,NA
+dbabehaviour.csv,beh,recorded behavior (see behavior codes),NA
+dbabehaviour.csv,det,recorded behaviour detail (see behavior  codes),NA
+dbabehaviour.csv,exp,"relative spatial location/exposure (new  in 2004, previously entered occasionally in comments)",NA
+dbabehaviour.csv,terr,on territory? - Y or N,NA
+dbabehaviour.csv,locX,spatial x coordinate of the recorded  behaviour,NA
+dbabehaviour.csv,locY,spatial y coordinate of the recorded  behaviour,NA
+dbabehaviour.csv,UTMX,unknown,NA
+dbabehaviour.csv,UTMY,unknown,NA
+dbabehaviour.csv,comments,comments,NA
+dbabehaviour.csv,datasource,unknown,NA
+dbabehaviour.csv,hand,indication of whether the squirrel was  eating left or right handed,NA
+dbaflastall.csv,id,auto-filled with next available number,NA
+dbaflastall.csv,squirrel_id,unique numeric identifier for each  individual,NA
+dbaflastall.csv,tagLft,a unique 5 or 6 digit alpha-numeric code  for eartag in left ear,NA
+dbaflastall.csv,tagRt,a unique 5 or 6 digit alpha-numeric code  for eartag in right ear,NA
+dbaflastall.csv,tagLftNum,a unique 5 or 6 digit numeric code for  eartag in left ear,NA
+dbaflastall.csv,tagRtNum,a unique 5 or 6 digit numeric code for  eartag in right ear,NA
+dbaflastall.csv,gr,two or three letters representing the  grid on which the data were collected,NA
+dbaflastall.csv,Sex,sex of the squirrel - Male (M) or Female  (F),NA
+dbaflastall.csv,dateS,"start date, date of earliest record for  this squirrel regardless of file (should be tagging record)",yyyy-mm-dd
+dbaflastall.csv,f1,first fate from earliest record for this  squirrel regardless of file (should be tagging record),NA
+dbaflastall.csv,BYear,"birth year from juvenile tagging record -  if tagged as an adult female, the birth year is the previous year if she was  a small, pink non-breeder all year, otherwise, the birth year is assigned two  years previous.",NA
+dbaflastall.csv,bCert,"birth year certainty - yes if tagged as  juvenile, no otherwise",NA
+dbaflastall.csv,newGr,grid from the last record for this  squirrel regardless of file,NA
+dbaflastall.csv,dateE,"end date, from the last record for this  squirrel regardless of file",yyyy-mm-dd
+dbaflastall.csv,f2,"last fate, from the last record for this  squirrel regardless of file",NA
+dbaflastall.csv,locX,spatial x coordinate of last known  location,NA
+dbaflastall.csv,locY,spatial y coordinate of last known  location,NA
+dbajuvenile.csv,id,auto-filled with next available number,NA
+dbajuvenile.csv,litter_id,unique numeric identifier for each litter,NA
+dbajuvenile.csv,squirrel_id,the unique numeric identifier of the  juvenile,NA
+dbajuvenile.csv,mother_id,the unique numeric identifier of the  mother,NA
+dbajuvenile.csv,grid,two or three letters representing the  grid on which the data were collected,NA
+dbajuvenile.csv,yr,year in which data were collected,NA
+dbajuvenile.csv,br,breeding status,NA
+dbajuvenile.csv,date,date of first nest entry,yyyy-mm-dd
+dbajuvenile.csv,ln,litter number,NA
+dbajuvenile.csv,mTagLft,a unique 5 or 6 digit alpha-numeric code for eartag in mother left ear,NA
+dbajuvenile.csv,mTagRt,a unique 5 or 6 digit alpha-numeric code for eartag in mother right ear,NA
+dbajuvenile.csv,mTagLftNum,a unique 5 or 6 digit numeric code for  eartag in mother left ear,NA
+dbajuvenile.csv,mTagRtNum,a unique 5 or 6 digit numeric code for  eartag in mother right ear,NA
+dbajuvenile.csv,locX,spatial x coordinate of mother midden,NA
+dbajuvenile.csv,locY,spatial y coordinate of mother midden,NA
+dbajuvenile.csv,tagLft,a unique 5 or 6 digit alpha-numeric code  for eartag in juvenile left ear,NA
+dbajuvenile.csv,tagRt,a unique 5 or 6 digit alpha-numeric code  for eartag in juvenile right ear,NA
+dbajuvenile.csv,tagLftNum,a unique 5 or 6 digit numeric code for  eartag in juvenile left ear,NA
+dbajuvenile.csv,tagRtNum,a unique 5 or 6 digit numeric code for  eartag in juvenile right ear,NA
+dbajuvenile.csv,color,combination of colours in the  juvenile left/right ears,NA
+dbajuvenile.csv,color_left,color or combination of colours in  juvenile left ear,NA
+dbajuvenile.csv,color_right,color or combination of colours in  juvenile right ear,NA
+dbajuvenile.csv,NX1,spatial x coordinate of nest 1 location,NA
+dbajuvenile.csv,NY1,spatial y coordinate of nest 1 location,NA
+dbajuvenile.csv,NType1,"nest 1 construction type (new in 2004,  but entered retroactively for previous years)",NA
+dbajuvenile.csv,NLoc1,nest 1 spatial/territory characteristics,NA
+dbajuvenile.csv,NX2,spatial x coordinate of nest 2 location,NA
+dbajuvenile.csv,NY2,spatial y coordinate of nest 2 location,NA
+dbajuvenile.csv,NType2,nest 2 construction type,NA
+dbajuvenile.csv,NLoc2,nest 2 spatial/territory characteristics,NA
+dbajuvenile.csv,BDate,birth date,yyyy-mm-dd
+dbajuvenile.csv,FieldBDate,birth date determined in the field,yyyy-mm-dd
+dbajuvenile.csv,KidWt,mean litter weight (used in 1992 and 1993  only),grams
+dbajuvenile.csv,Weight,weight of young at nest 1,grams
+dbajuvenile.csv,BSizeN1,zygomatic width at nest 1 (new in 1999),mm
+dbajuvenile.csv,Sex,sex of the squirrel - Male (M) or Female  (F),NA
+dbajuvenile.csv,Con1,condition of young at nest 1,NA
+dbajuvenile.csv,Flee1,flea load of young at nest 1,NA
+dbajuvenile.csv,ACT1,activity of young at nest 1,NA
+dbajuvenile.csv,TagDt,date when tagged/nest 2,yyyy-mm-dd
+dbajuvenile.csv,TagWt,weight of young when tagged,grams
+dbajuvenile.csv,BSizeN2,zygomatic width at nest 2 (new in 1999),mm
+dbajuvenile.csv,Con2,condition of young at nest 2,NA
+dbajuvenile.csv,Flee2,flea load of young at nest 2,NA
+dbajuvenile.csv,Act2,activity of young at nest 2,NA
+dbajuvenile.csv,DateSeen,day young seen out of nest,NA
+dbajuvenile.csv,Wt70,weight of young at 70 days,grams
+dbajuvenile.csv,DateL,date last seen,yyyy-mm-dd
+dbajuvenile.csv,Wean,weaning location,NA
+dbajuvenile.csv,WSpat,weaning spatial location,NA
+dbajuvenile.csv,F,fall location,NA
+dbajuvenile.csv,FSpat,fall spatial location,NA
+dbajuvenile.csv,Spr,spring location,NA
+dbajuvenile.csv,SSpat,spring spatial location,NA
+dbajuvenile.csv,Comments,comments,NA
+dbajuvenile.csv,Food,numeric code indicating type of  experimental manipulation,NA
+dbajuvenile.csv,Marker,unique combination of LN + YR + taglft +  tagrt,NA
+dbajuvenile.csv,FU,mother killed by human causes,NA
+dbajuvenile.csv,MCO,unknown,NA
+dbajuvenile.csv,BalWt_1,unknown,NA
+dbajuvenile.csv,BalWt_2,unknown,NA
+dbajuvenile.csv,DNA1,8 alpha-numeric code to match DNA vials to squirrel identity,NA
+dbajuvenile.csv,DNA2,8 alpha-numeric code to match DNA vials to squirrel identity,NA
+dbamidden.csv,id,auto-filled with next available number,NA
+dbamidden.csv,squirrel_id,a unique numeric identifier for each  individual,NA
+dbamidden.csv,grid,two or three letters representing the  grid on which the data were collected,NA
+dbamidden.csv,date,date of census (05/15/YYYY or 08/15/YYYY)  or date of change in midden occupancy,yyyy-mm-dd
+dbamidden.csv,obs,two or three letters representing the observer initials,NA
+dbamidden.csv,reflo,reference location of the midden up to 5  alpha-numeric combinations including dots and minus signs,NA
+dbamidden.csv,locX,spatial x coordinate of midden,NA
+dbamidden.csv,locY,spatial y coordinate of midden,NA
+dbamidden.csv,tagLft,a unique 5 or 6 digit alpha-numeric code  for eartag in left ear,NA
+dbamidden.csv,tagRt,a unique 5 or 6 digit alpha-numeric code  for eartag in right ear,NA
+dbamidden.csv,tagLftNum,a unique 5 or 6 digit numeric code for  eartag in left ear,NA
+dbamidden.csv,tagRtNum,a unique 5 or 6 digit numeric code for  eartag in right ear,NA
+dbamidden.csv,col,combination of colours in the left/right  ears,NA
+dbamidden.csv,color_left,color or combination of colours in left ear,NA
+dbamidden.csv,color_right,color or combination of colours in right ear,NA
+dbamidden.csv,Sex,sex of the squirrel - Male (M) or Female  (F),NA
+dbamidden.csv,fate,fate of midden ownership,NA
+dbamidden.csv,mcon,midden condition,NA
+dbamidden.csv,act,sign of activity at midden (new in 1997),NA
+dbamidden.csv,def,strength of defence,NA
+dbamidden.csv,ft,"15 (do not change, used by yearly  analysis programs)",NA
+dbamidden.csv,cones,cached cones on the midden,NA
+dbamidden.csv,nest,one or more nests within a 10m-diameter  circle around center of midden - Y or N,NA
+dbamidden.csv,comments,comments,NA
+dbatrapping.csv,id,auto-filled with next available number,NA
+dbatrapping.csv,squirrel_id,a unique numeric identifier for each  individual,NA
+dbatrapping.csv,gr,two or three letters representing the  grid on which the data were collected,NA
+dbatrapping.csv,date,date squirrel trapped,yyyy-mm-dd
+dbatrapping.csv,obs,two or three letters representing the  observer initials,NA
+dbatrapping.csv,ft,fate of the squirrel,NA
+dbatrapping.csv,tagLft,a unique 5 or 6 digit alpha-numeric code  for eartag in left ear,NA
+dbatrapping.csv,tagRt,a unique 5 or 6 digit alpha-numeric code  for eartag in right ear,NA
+dbatrapping.csv,tagLftNum,a unique 5 or 6 digit numeric code for  eartag in left ear,NA
+dbatrapping.csv,tagRtNum,a unique 5 or 6 digit numeric code for  eartag in right ear,NA
+dbatrapping.csv,color,combination of colours in the left/right  ears,NA
+dbatrapping.csv,color_left,color or combination of colours in left ear,NA
+dbatrapping.csv,color_right,color or combination of colours in right ear,NA
+dbatrapping.csv,collar,6 digit frequency of the radio collar  (e.g. 151348),NA
+dbatrapping.csv,radio,fate of the collar (new in 1996),NA
+dbatrapping.csv,locX,spatial x coordinate of midden trapped,NA
+dbatrapping.csv,locY,spatial y coordinate of midden trapped,NA
+dbatrapping.csv,wgt,calculation of squirrel weight (scale  weight-bagwt-collwt),grams
+dbatrapping.csv,BSize,zygomatic width/body size (new in 1999),mm
+dbatrapping.csv,Sex,sex of the squirrel - Male (M) or Female  (F),NA
+dbatrapping.csv,RC,reproductive condition of the squirrel at  capture,NA
+dbatrapping.csv,NC,nipple condition,NA
+dbatrapping.csv,CCon,coat condition (discontinued in 1999),NA
+dbatrapping.csv,R,behavior on release,NA
+dbatrapping.csv,RattLocX,unknown,NA
+dbatrapping.csv,RattLocY,unknown,NA
+dbatrapping.csv,BrStatus,breeding status,NA
+dbatrapping.csv,rhf,unknown,NA
+dbatrapping.csv,st,unknown,NA
+dbatrapping.csv,OldTagL,"old taglft when there is a retag (ft = 3  or 13) or when animal is new (ft = 2, 6, or 7)",NA
+dbatrapping.csv,OldTagR,old tagrt,NA
+dbatrapping.csv,TagHist,comment field,NA
+dbatrapping.csv,DataSource,where data sourced from (new in 2004) -  databook or handheld,NA
+dbatrapping.csv,poop,fecal vial number,NA
+dbatrapping.csv,ptime,time that fecal sample taken,hh:mm:ss
+dbatrapping.csv,OldTagLAlpha,unknown,NA
+dbatrapping.csv,OldTagRAlpha,unknown,NA
+flastall.csv,id,unknownauto-filled with next available number,NA
+flastall.csv,squirrel_id,unique numeric identifier for each  individual,NA
+flastall.csv,gr,two or three letters representing the  grid on which the data were collected,NA
+flastall.csv,sex,sex of the squirrel - Male (M) or Female  (F),NA
+flastall.csv,dates,"start date, date of earliest record for  this squirrel regardless of file (should be tagging record)",yyyy-mm-dd
+flastall.csv,f1,first fate from earliest record for this  squirrel regardless of file (should be tagging record),NA
+flastall.csv,byear,"birth year from juvenile tagging record -  if tagged as an adult female, the birth year is the previous year if she was  a small, pink non-breeder all year, otherwise, the birth year is assigned two  years previous.",NA
+flastall.csv,litter_id,unique numeric identifier for each litter,NA
+flastall.csv,dam_id,the unique numeric identifier of the mother,NA
+flastall.csv,sire_id,the unique numeric identifier of the father,NA
+flastall.csv,bcert,"birth year certainty - yes if tagged as  juvenile, no otherwise",NA
+flastall.csv,newgr,grid from the last record for this  squirrel regardless of file,NA
+flastall.csv,newsex,unknown,NA
+flastall.csv,datee,"end date, from the last record for this  squirrel regardless of file",yyyy-mm-dd
+flastall.csv,f2,"last fate, from the last record for this  squirrel regardless of file",NA
+flastall.csv,locX,spatial x coordinate of last known  location,NA
+flastall.csv,locY,spatial y coordinate of last known  location,NA
+flastall2.csv,id,auto-filled with next available number,NA
+flastall2.csv,squirrel_id,unique numeric identifier for each  individual,NA
+flastall2.csv,gr,two or three letters representing the  grid on which the data were collected,NA
+flastall2.csv,sex,sex of the squirrel - Male (M) or Female  (F),NA
+flastall2.csv,dates,"start date, date of earliest record for  this squirrel regardless of file (should be tagging record)",yyyy-mm-dd
+flastall2.csv,f1,first fate from earliest record for this  squirrel regardless of file (should be tagging record),NA
+flastall2.csv,byear,"birth year from juvenile tagging record -  if tagged as an adult female, the birth year is the previous year if she was  a small, pink non-breeder all year, otherwise, the birth year is assigned two  years previous.",NA
+flastall2.csv,litter_id,unique numeric identifier for each litter,NA
+flastall2.csv,dam_id,the unique numeric identifier of the mother,NA
+flastall2.csv,sire_id,the unique numeric identifier of the father,NA
+flastall2.csv,bcert,"birth year certainty - yes if tagged as  juvenile, no otherwise",NA
+flastall2.csv,newgr,grid from the last record for this  squirrel regardless of file,NA
+flastall2.csv,newsex,unknown,NA
+flastall2.csv,datee,"end date, from the last record for this  squirrel regardless of file",yyyy-mm-dd
+flastall2.csv,f2,"last fate, from the last record for this  squirrel regardless of file",NA
+flastall2.csv,locX,spatial x coordinate of last known  location,NA
+flastall2.csv,locY,spatial y coordinate of last known  location,NA
+historic_squirrel_ids.csv,id,auto-filled with next available number,NA
+historic_squirrel_ids.csv,old_squirrel_id,old unique numeric identifier for each individual,NA
+historic_squirrel_ids.csv,new_squirrel_id,new unique numeric identifier for each individual,NA
+historic_squirrel_ids.csv,change,year in which database fix was made,NA
+juvenile.csv,id,auto-filled with next available number,NA
+juvenile.csv,version,unknown,NA
+juvenile.csv,color_left,color or combination of colours in the  juvenile left ear,NA
+juvenile.csv,color_right,color or combination of colours in the  juvenile right ear,NA
+juvenile.csv,comments,comments,NA
+juvenile.csv,date_created,date that juvenile record was first  entered in database,yyyy-mm-dd hh:mm:ss
+juvenile.csv,dna1,8 alpha-numeric code to match DNA vials  to squirrel identity,NA
+juvenile.csv,dna2,8 alpha-numeric code to match DNA vials  to squirrel identity,NA
+juvenile.csv,jvariable1,generic variable,NA
+juvenile.csv,jvariable2,generic variable,NA
+juvenile.csv,jvariable3,generic variable,NA
+juvenile.csv,jvariable4,generic variable,NA
+juvenile.csv,last_updated,date that juvenile record was last  updated in database,yyyy-mm-dd hh:mm:ss
+juvenile.csv,litter_id,unique numeric identifier for each litter,NA
+juvenile.csv,notch,notch in ear of juvenile for  identification,NA
+juvenile.csv,sex,sex of the juvenile - Male (M) or Female  (F),NA
+juvenile.csv,squirrel_id,the unique numeric identifier of the  juvenile,NA
+juvenile.csv,tagLft,a unique 5 or 6 digit alpha-numeric code  for eartag in juvenile left ear,NA
+juvenile.csv,tagRt,a unique 5 or 6 digit alpha-numeric code  for eartag in juvenile right ear,NA
+juvenile.csv,weight,weight of juvenile at nest 1,grams
+juvenile.csv,tagWT,weight of juvenile when tagged,grams
+litter.csv,id,unique numeric  identifier for each litter,NA
+litter.csv,version,unknown,NA
+litter.csv,br,breeding status,NA
+litter.csv,comments,comments,NA
+litter.csv,nType1,nest 1 construction type,NA
+litter.csv,nType2,nest 2 construction type,NA
+litter.csv,date1,date of first nest entry,yyyy-mm-dd
+litter.csv,date_created,date that litter record was first entered  in database,yyyy-mm-dd hh:mm:ss
+litter.csv,food,numeric code indicating type of  experimental manipulation,NA
+litter.csv,fieldBDate,birth date,yyyy-mm-dd
+litter.csv,grid,two or three letters representing the  grid on which the data were collected,NA
+litter.csv,tagDt,date when tagged/nest 2,yyyy-mm-dd
+litter.csv,last_updated,date that litter record was last updated  in database,yyyy-mm-dd hh:mm:ss
+litter.csv,ln,litter number,NA
+litter.csv,locx,spatial x coordinate of the mother's  midden,NA
+litter.csv,locy,spatial y coordinate of the mother's  midden,NA
+litter.csv,lvariable1,generic variable,NA
+litter.csv,lvariable2,generic variable,NA
+litter.csv,mTagLft,a unique 5 or 6 digit alpha-numeric code  for eartag in mother left ear,NA
+litter.csv,mTagRt,a unique 5 or 6 digit alpha-numeric code  for eartag in mother right ear,NA
+litter.csv,nx1,spatial x coordinate of the nest 1,NA
+litter.csv,nx2,spatial x coordinate of the nest 2,NA
+litter.csv,ny1,spatial y coordinate of the nest 1,NA
+litter.csv,ny2,spatial y coordinate of the nest 2,NA
+litter.csv,squirrel_id,the unique numeric identifier of the  mother,NA
+litter.csv,yr,year in which data were collected,NA
+pb_data.csv,Grid,two or three letters  representing the grid on which the data were collected,NA
+pb_data.csv,Midden,reference location of the midden where the peanut butter was added,NA
+pb_data.csv,LocX,spatial x coordinate of midden where the peanut butter was added,NA
+pb_data.csv,LocY,spatial y coordinate of midden where the peanut butter was added,NA
+pb_data.csv,Date,date of peanut butter addition,yyyy-mm-dd
+pb_data.csv,OBS,two or three letters representing the observer initials,NA
+pb_data.csv,PB_Remaining,amount of peanut butter remaining in bucket,kilograms
+pb_data.csv,PB_Added,"peanut butter added? (1 = yes, 0 = no)",NA
+pb_data.csv,PB_Fate,unknown,NA
+pb_data.csv,Nest,nest in the bucket? (Y or N),NA
+pb_data.csv,Mushrooms,mushrooms in the bucket? (Y or N),NA
+pb_data.csv,Contents,comment field for other items in the bucket,NA
+pb_data.csv,Comments,comments,NA
+pb_data.csv,PB_Remaining_code,unknown,NA
+pedigree.csv,Sex,sex of the squirrel -  Male (M) or Female (F),NA
+pedigree.csv,squirrel_id,unique numeric identifier for each  individual,NA
+pedigree.csv,litter_id,unique numeric identifier for each litter,NA
+pedigree.csv,sire_id,the unique numeric identifier of the mother,NA
+pedigree.csv,dam_id,the unique numeric identifier of the father,NA
+pedigree.csv,BYEAR,birth year of the squirrel,NA
+pedigree.csv,Grid,grid that squirrel was born on,NA
+pedigree.csv,f8,unknown,NA
+pedigree.csv,f9,unknown,NA
+pedigree.csv,f10,unknown,NA
+pedigree.csv,f11,unknown,NA
+pedigree.csv,f12,unknown,NA
+pedigree.csv,f13,unknown,NA
+pedigree.csv,f14,unknown,NA
+pedigree.csv,f15,unknown,NA
+pedigree.csv,f16,unknown,NA
+pedigree.csv,f17,unknown,NA
+pedigree_clean.csv,squirrel_id,unique numeric  identifier for each individual,NA
+pedigree_clean.csv,sex,sex of the squirrel - Male (M) or Female  (F),NA
+pedigree_clean.csv,grid,grid that squirrel was born on,NA
+pedigree_clean.csv,byear,birth year of the squirrel,NA
+pedigree_clean.csv,litter_id,unique numeric identifier for each litter,NA
+pedigree_clean.csv,sire_id,the unique numeric identifier of the mother,NA
+pedigree_clean.csv,dam_id,the unique numeric identifier of the father,NA
+squirrel.csv,id,unique numeric  identifier for each individual,NA
+squirrel.csv,census_date,date of most recent census record for  squirrel,yyyy-mm-dd
+squirrel.csv,collar,6 digit frequency of the radio collar  from most recent trapping record,NA
+squirrel.csv,colorlft,color or combination of colours in the left ear,NA
+squirrel.csv,colorrt,color or combination of colours in the right ear,NA
+squirrel.csv,date_created,date that squirrel record was first  created in database,yyyy-mm-dd hh:mm:ss
+squirrel.csv,gr,grid that squirrel was most recently  trapped on,NA
+squirrel.csv,last_updated,date that squirrel record was last  updated in database,yyyy-mm-dd hh:mm:ss
+squirrel.csv,locx,spatial x coordinate of most recent  census location,NA
+squirrel.csv,locy,spatial y coordinate of most recent  census location,NA
+squirrel.csv,reflo,reference location from most recent  census -  up to 5 alpha-numeric  combinations including dots and minus signs,NA
+squirrel.csv,sex,sex of the squirrel - Male (M) or Female  (F),NA
+squirrel.csv,taglft,a unique 5 or 6 digit alpha-numeric code  for eartag in left ear,NA
+squirrel.csv,tagrt,a unique 5 or 6 digit alpha-numeric code  for eartag in right ear,NA
+squirrel.csv,trap_date,date of most recent trapping record for  squirrel,yyyy-mm-dd
+squirrel_alias.csv,squirrel_id,unique numeric  identifier for each individual,NA
+squirrel_alias.csv,taglft,a unique 5 or 6 digit alpha-numeric code  for eartag in left ear,NA
+squirrel_alias.csv,tagrt,a unique 5 or 6 digit alpha-numeric code  for eartag in right ear,NA
+squirrel_alias.csv,from_date,date entered in database,yyyy-mm-dd
+trapping.csv,id,auto-filled with next available number,NA
+trapping.csv,version,unknown,NA
+trapping.csv,bagWt,weight of the handling bag,grams
+trapping.csv,rattle,unknown,NA
+trapping.csv,collar,6 digit frequency of the radio collar  (e.g. 151348),NA
+trapping.csv,collWt,"weight of the radio collar, if present  (should be 4g for regular collars or 8g for AXY collars)",grams
+trapping.csv,color_fate,fate of the color combination in squirrel ears,NA
+trapping.csv,color_left,color or combination of colours in the left ear,NA
+trapping.csv,color_right,color or combination of colours in the right ear,NA
+trapping.csv,comments,comments,NA
+trapping.csv,date,date squirrel trapped,yyyy-mm-dd
+trapping.csv,date_created,date that trapping record was first  entered in database,yyyy-mm-dd hh:mm:ss
+trapping.csv,dna1,8 alpha-numeric code to match DNA vials  to squirrel identity,NA
+trapping.csv,dna2,8 alpha-numeric code to match DNA vials  to squirrel identity,NA
+trapping.csv,ft,fate of the squirrel,NA
+trapping.csv,radio,fate of the collar,NA
+trapping.csv,gr,two or three letters representing the  grid on which the data were collected,NA
+trapping.csv,last_updated,date that trapping record was last  updated in database,yyyy-mm-dd hh:mm:ss
+trapping.csv,locx,spatial x coordinate of midden trapped,NA
+trapping.csv,locy,spatial y coordinate of midden trapped,NA
+trapping.csv,nipple,nipple condition,NA
+trapping.csv,obs,two or three letters representing trapper initials,NA
+trapping.csv,rep_con,reproductive condition of the squirrel at  capture,NA
+trapping.csv,scale_weight,total weight with bag,grams
+trapping.csv,sex,sex of the squirrel - Male (M) or Female  (F),NA
+trapping.csv,squirrel_id,unique numeric identifier for each  individual,NA
+trapping.csv,wgt,calculation of squirrel weight (scale  weight-bagwt-collwt),grams
+trapping.csv,tagLft,a unique 5 or 6 digit alpha-numeric code  for eartag in left ear,NA
+trapping.csv,tagRt,a unique 5 or 6 digit alpha-numeric code  for eartag in right ear,NA
+trapping.csv,tvariable1,generic variable - starting in 2018 this  column contains the 4-digit fecal vial number,NA
+trapping.csv,tvariable2,generic variable - starting in 2018 this  column contains the time the fecal sample was taken,hh.mm
+trapping.csv,tvariable3,generic variable,NA
+trapping.csv,tvariable4,generic variable,NA
+trapping.csv,tvariable5,generic variable,NA

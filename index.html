@@ -1,0 +1,5850 @@
+<html>
+  <head>
+    <title>Compiled annual statewide Alaskan salmon escapement counts, 1921-2017</title>
+    <script type="application/ld+json">
+      {
+  "@context": "http://schema.org",
+  "type": "Dataset",
+  "name": "Kluane Red Squirrel Project Database",
+  "creator": [
+    {
+      "type": "Person",
+      "id": "0000-0001-6317-038X",
+      "givenName": "Stan",
+      "familyName": "Boutin",
+      "email": "sboutin@ualberta.ca",
+      "affiliation": "University of Alberta"
+    },
+    {
+      "type": "Person",
+      "id": "0000-0001-7323-2572",
+      "givenName": "Andrew",
+      "familyName": "McAdam",
+      "email": "andrew.mcadam@colorado.edu",
+      "affiliation": "University of Colorado"
+    },
+    {
+      "type": "Person",
+      "id": "0000-0002-3058-265X",
+      "givenName": "Ben",
+      "familyName": "Dantzer",
+      "email": "dantzer@umich.edu",
+      "affiliation": "University of Michigan"
+    },
+    {
+      "type": "Person",
+      "id": "0000-0003-0849-7181",
+      "givenName": "Jeffrey",
+      "familyName": "Lane",
+      "email": "jeffrey.lane@usask.ca",
+      "affiliation": "University of Saskatchewan"
+    }
+  ],
+  "description": "The Kluane Red Squirrel Project is a long-term individual-based time-series of red squirrels in the southwestern Yukon Territory of Canada.  The data are organized into 20 tables within a relational mySQL database.  Individual tables are not available for download here as csv files.  If you are interested in accessing the data please contact Andrew McAdam at the University of Colorado.  Attributes are listed for all variables included within the 20 data tables.  Coding descriptions and more detailed descriptions of the variables can be found within the KRSP Database Appendix.",
+  "datePublished": "2020-02-04",
+  "keywords": ["ecology", "evolution", "energetics", " behaviour", "physiology", "life history", "genetics", "red squirrel", "Tamiasciurus hudsonicus", "rodent", "mammal", "territorial"],
+  "funder": "Natural Sciences and Engineering Research  Council of Canada, National Science Foundation, Polar Knowledge Canada",
+  "temporalCoverage": "1989/2018",
+  "license": null,
+  "spatialCoverage": {
+    "type": "Place",
+    "name": "This data was collected from study sites in  Kluane National Park in the southwestern Yukon, Canada. The  general study area is located in a broad glacial valley (Shakwak Trench) that  is approximately 900 m above sea level.",
+    "geo": {
+      "type": "GeoShape",
+      "box": "61.59356 -137.498578 60.745973 -139.465131"
+    }
+  },
+  "variableMeasured": [
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "id",
+      "description": "auto-filled with next available number"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "version",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "behaviour",
+      "description": "recorded behavior (see behavior codes)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "color_left",
+      "description": "color or combination of colours in the  left ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "color_right",
+      "description": "color or combination of colours in the  right ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "comments",
+      "description": "comments"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "date",
+      "description": "date that behavior was recorded in the  field"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd hh:mm:ss",
+      "name": "date_created",
+      "description": "date that behavior record was first  entered in database"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "detail",
+      "description": "recorded behaviour detail (see behavior  codes)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "grid",
+      "description": "two or three letters representing the  grid on which the data were collected"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "hand",
+      "description": "indication of whether the squirrel was  eating left or right handed"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd hh:mm:ss",
+      "name": "last_updated",
+      "description": "date that behavior was last updated in  database"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locx",
+      "description": "spatial x coordinate of the recorded  behaviour"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locy",
+      "description": "spatial y coordinate of the recorded  behaviour"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "mode",
+      "description": "the manner in which the data were collected"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "observer",
+      "description": "two or three letters representing  initials of observer"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "squirrel_id",
+      "description": "unique numeric identifier for each  individual"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "tag_left",
+      "description": "a unique 5 or 6 digit alpha-numeric code  for eartag in left ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "tag_right",
+      "description": "a unique 5 or 6 digit alpha-numeric code  for eartag in right ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "hh:mm:ss",
+      "name": "time",
+      "description": "time that behaviour was recorded in the  field"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "census_date",
+      "description": "date of census  (05/15/YYYY or 08/15/YYYY) or date of change in ownership"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "colorlft",
+      "description": "color or combination of colours in the  left ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "colorrt",
+      "description": "color or combination of colours in the right ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd hh:mm:ss",
+      "name": "date_created",
+      "description": "date that census record was first entered  in database"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "gr",
+      "description": "two or three letters representing the  grid on which the data were collected"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd hh:mm:ss",
+      "name": "last_updated",
+      "description": "date that census record was last updated  in database"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locx",
+      "description": "spatial x coordinate of midden owned"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locy",
+      "description": "spatial y coordinate of midden owned"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "obs",
+      "description": "two or three letters representing the  observer initials"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "reflo",
+      "description": "reference location of the midden up to 5  alpha-numeric combinations including dots and minus signs"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "sex",
+      "description": "sex of the squirrel - Male (M) or Female  (F)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "sq_fate",
+      "description": "numeric code indicating the fate of the  squirrel in the census"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "taglft",
+      "description": "a unique 5 or 6 digit alpha-numeric code  for eartag in left ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "tagrt",
+      "description": "a unique 5 or 6 digit alpha-numeric code  for eartag in right ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "trap",
+      "description": "were the traps on the midden hung in the  fall - Y or N"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Grid",
+      "description": "two or three letters  representing the grid on which the data were collected"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Year",
+      "description": "year in which data were collected"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Stake",
+      "description": "grid stake nearest the cone count tree"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "LocX",
+      "description": "spatial x coordinate of the cone count  tree"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "LocY",
+      "description": "spatial y coordinate of the cone count  tree"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "cm",
+      "name": "DBH",
+      "description": "diameter at breast height of cone count  tree (not updated each year)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "m",
+      "name": "Distance",
+      "description": "distance of cone count tree from the  nearest grid stake"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "degrees",
+      "name": "Direction",
+      "description": "direction of cone count tree from nearest  grid stake"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Per",
+      "description": "percent cover of cones in top 3 m of tree"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "New_Tree",
+      "description": "is this a new tree counted for the first  time? - Y or N"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Status",
+      "description": "status of cone count tree relative to  amount of bark beetle damage"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "Count_Date",
+      "description": "date on which the cones were counted"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "NumNew",
+      "description": "number of new cones in top 3 m of tree"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Comments",
+      "description": "comments"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Grid",
+      "description": "two or three letters representing the  grid on which the data were collected"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "BR",
+      "description": "breeding status"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "YR",
+      "description": "year in which data were collected"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Age",
+      "description": "age of female in current year"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "LN",
+      "description": "litter number"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "tagLft",
+      "description": "a unique 5 or 6 digit alpha-numeric code  for eartag in left ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "tagRt",
+      "description": "a unique 5 or 6 digit alpha-numeric code  for eartag in right ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "tagLftNum",
+      "description": "a unique 5 or 6 digit numeric code for  eartag in left ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "tagRtNum",
+      "description": "a unique 5 or 6 digit numeric code for  eartag in right ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locX",
+      "description": "spatial x coordinate of the mother midden"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locY",
+      "description": "spatial y coordinate of the mother midden"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Ratio",
+      "description": "proportion of males in litter"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Food",
+      "description": "numeric code indicating type of  experimental manipulation"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "KidE",
+      "description": "number of kids to emergence"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "KidW",
+      "description": "number of kids to weaning"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "KidF",
+      "description": "number of kids surviving to August 1"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "KidS",
+      "description": "number of kids surviving to May 1"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "grams",
+      "name": "MWt",
+      "description": "mother weight within 10 days after birth"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "grams",
+      "name": "MWt2",
+      "description": "mother weight 1 week either side of day  70"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "LitWt",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "KidWt",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "EX",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Pre",
+      "description": "litter in previous year? (1 = no, 2 =  yes)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "LSize",
+      "description": "litter size"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Lsc",
+      "description": "litter size code"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "FU",
+      "description": "mother killed by human causes"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Mom",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "MomB",
+      "description": "mother behavior"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "MomM",
+      "description": "fate of mother midden"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "MomS",
+      "description": "mother location in spring"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "MomF",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Marker",
+      "description": "unique combination of LN + YR + taglft +  tagrt"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "BDate",
+      "description": "estimated birthdate of any lost litters  (new in 1997)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Experiment",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "col",
+      "description": "combination of colours in the left/right  ears"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "color_left",
+      "description": "color or combination of colours in the left ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "color_right",
+      "description": "color or combination of colours in the right ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "bhour",
+      "description": "hour that behaviour was recorded in the  field"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "bmin",
+      "description": "minute that behaviour was recorded in the  field"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "bsec",
+      "description": "second that behaviour was recorded in the  field"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "beh",
+      "description": "recorded behavior (see behavior codes)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "det",
+      "description": "recorded behaviour detail (see behavior  codes)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "exp",
+      "description": "relative spatial location/exposure (new  in 2004, previously entered occasionally in comments)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "terr",
+      "description": "on territory? - Y or N"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locX",
+      "description": "spatial x coordinate of the recorded  behaviour"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locY",
+      "description": "spatial y coordinate of the recorded  behaviour"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "UTMX",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "UTMY",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "datasource",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Sex",
+      "description": "sex of the squirrel - Male (M) or Female  (F)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "dateS",
+      "description": "start date, date of earliest record for  this squirrel regardless of file (should be tagging record)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "f1",
+      "description": "first fate from earliest record for this  squirrel regardless of file (should be tagging record)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "BYear",
+      "description": "birth year from juvenile tagging record -  if tagged as an adult female, the birth year is the previous year if she was  a small, pink non-breeder all year, otherwise, the birth year is assigned two  years previous."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "bCert",
+      "description": "birth year certainty - yes if tagged as  juvenile, no otherwise"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "newGr",
+      "description": "grid from the last record for this  squirrel regardless of file"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "dateE",
+      "description": "end date, from the last record for this  squirrel regardless of file"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "f2",
+      "description": "last fate, from the last record for this  squirrel regardless of file"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locX",
+      "description": "spatial x coordinate of last known  location"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locY",
+      "description": "spatial y coordinate of last known  location"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "litter_id",
+      "description": "unique numeric identifier for each litter"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "squirrel_id",
+      "description": "the unique numeric identifier of the  juvenile"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "mother_id",
+      "description": "the unique numeric identifier of the  mother"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "yr",
+      "description": "year in which data were collected"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "br",
+      "description": "breeding status"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "date",
+      "description": "date of first nest entry"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "ln",
+      "description": "litter number"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "mTagLft",
+      "description": "a unique 5 or 6 digit alpha-numeric code for eartag in mother left ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "mTagRt",
+      "description": "a unique 5 or 6 digit alpha-numeric code for eartag in mother right ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "mTagLftNum",
+      "description": "a unique 5 or 6 digit numeric code for  eartag in mother left ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "mTagRtNum",
+      "description": "a unique 5 or 6 digit numeric code for  eartag in mother right ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locX",
+      "description": "spatial x coordinate of mother midden"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locY",
+      "description": "spatial y coordinate of mother midden"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "tagLft",
+      "description": "a unique 5 or 6 digit alpha-numeric code  for eartag in juvenile left ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "tagRt",
+      "description": "a unique 5 or 6 digit alpha-numeric code  for eartag in juvenile right ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "tagLftNum",
+      "description": "a unique 5 or 6 digit numeric code for  eartag in juvenile left ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "tagRtNum",
+      "description": "a unique 5 or 6 digit numeric code for  eartag in juvenile right ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "color",
+      "description": "combination of colours in the  juvenile left/right ears"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "color_left",
+      "description": "color or combination of colours in  juvenile left ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "color_right",
+      "description": "color or combination of colours in  juvenile right ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "NX1",
+      "description": "spatial x coordinate of nest 1 location"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "NY1",
+      "description": "spatial y coordinate of nest 1 location"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "NType1",
+      "description": "nest 1 construction type (new in 2004,  but entered retroactively for previous years)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "NLoc1",
+      "description": "nest 1 spatial/territory characteristics"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "NX2",
+      "description": "spatial x coordinate of nest 2 location"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "NY2",
+      "description": "spatial y coordinate of nest 2 location"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "NType2",
+      "description": "nest 2 construction type"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "NLoc2",
+      "description": "nest 2 spatial/territory characteristics"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "BDate",
+      "description": "birth date"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "FieldBDate",
+      "description": "birth date determined in the field"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "grams",
+      "name": "KidWt",
+      "description": "mean litter weight (used in 1992 and 1993  only)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "grams",
+      "name": "Weight",
+      "description": "weight of young at nest 1"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "mm",
+      "name": "BSizeN1",
+      "description": "zygomatic width at nest 1 (new in 1999)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Con1",
+      "description": "condition of young at nest 1"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Flee1",
+      "description": "flea load of young at nest 1"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "ACT1",
+      "description": "activity of young at nest 1"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "TagDt",
+      "description": "date when tagged/nest 2"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "grams",
+      "name": "TagWt",
+      "description": "weight of young when tagged"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "mm",
+      "name": "BSizeN2",
+      "description": "zygomatic width at nest 2 (new in 1999)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Con2",
+      "description": "condition of young at nest 2"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Flee2",
+      "description": "flea load of young at nest 2"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Act2",
+      "description": "activity of young at nest 2"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "DateSeen",
+      "description": "day young seen out of nest"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "grams",
+      "name": "Wt70",
+      "description": "weight of young at 70 days"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "DateL",
+      "description": "date last seen"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Wean",
+      "description": "weaning location"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "WSpat",
+      "description": "weaning spatial location"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "F",
+      "description": "fall location"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "FSpat",
+      "description": "fall spatial location"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Spr",
+      "description": "spring location"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "SSpat",
+      "description": "spring spatial location"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "MCO",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "BalWt_1",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "BalWt_2",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "DNA1",
+      "description": "8 alpha-numeric code to match DNA vials to squirrel identity"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "DNA2",
+      "description": "8 alpha-numeric code to match DNA vials to squirrel identity"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "squirrel_id",
+      "description": "a unique numeric identifier for each  individual"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "date",
+      "description": "date of census (05/15/YYYY or 08/15/YYYY)  or date of change in midden occupancy"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "obs",
+      "description": "two or three letters representing the observer initials"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locX",
+      "description": "spatial x coordinate of midden"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locY",
+      "description": "spatial y coordinate of midden"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "color_left",
+      "description": "color or combination of colours in left ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "color_right",
+      "description": "color or combination of colours in right ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "fate",
+      "description": "fate of midden ownership"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "mcon",
+      "description": "midden condition"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "act",
+      "description": "sign of activity at midden (new in 1997)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "def",
+      "description": "strength of defence"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "ft",
+      "description": "15 (do not change, used by yearly  analysis programs)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "cones",
+      "description": "cached cones on the midden"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "nest",
+      "description": "one or more nests within a 10m-diameter  circle around center of midden - Y or N"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "date",
+      "description": "date squirrel trapped"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "ft",
+      "description": "fate of the squirrel"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "color",
+      "description": "combination of colours in the left/right  ears"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "collar",
+      "description": "6 digit frequency of the radio collar  (e.g. 151348)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "radio",
+      "description": "fate of the collar (new in 1996)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locX",
+      "description": "spatial x coordinate of midden trapped"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locY",
+      "description": "spatial y coordinate of midden trapped"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "grams",
+      "name": "wgt",
+      "description": "calculation of squirrel weight (scale  weight-bagwt-collwt)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "mm",
+      "name": "BSize",
+      "description": "zygomatic width/body size (new in 1999)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "RC",
+      "description": "reproductive condition of the squirrel at  capture"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "NC",
+      "description": "nipple condition"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "CCon",
+      "description": "coat condition (discontinued in 1999)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "R",
+      "description": "behavior on release"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "RattLocX",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "RattLocY",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "BrStatus",
+      "description": "breeding status"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "rhf",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "st",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "OldTagL",
+      "description": "old taglft when there is a retag (ft = 3  or 13) or when animal is new (ft = 2, 6, or 7)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "OldTagR",
+      "description": "old tagrt"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "TagHist",
+      "description": "comment field"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "DataSource",
+      "description": "where data sourced from (new in 2004) -  databook or handheld"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "poop",
+      "description": "fecal vial number"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "hh:mm:ss",
+      "name": "ptime",
+      "description": "time that fecal sample taken"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "OldTagLAlpha",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "OldTagRAlpha",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "id",
+      "description": "unknownauto-filled with next available number"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "dates",
+      "description": "start date, date of earliest record for  this squirrel regardless of file (should be tagging record)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "byear",
+      "description": "birth year from juvenile tagging record -  if tagged as an adult female, the birth year is the previous year if she was  a small, pink non-breeder all year, otherwise, the birth year is assigned two  years previous."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "dam_id",
+      "description": "the unique numeric identifier of the mother"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "sire_id",
+      "description": "the unique numeric identifier of the father"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "bcert",
+      "description": "birth year certainty - yes if tagged as  juvenile, no otherwise"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "newgr",
+      "description": "grid from the last record for this  squirrel regardless of file"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "newsex",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "datee",
+      "description": "end date, from the last record for this  squirrel regardless of file"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "old_squirrel_id",
+      "description": "old unique numeric identifier for each individual"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "new_squirrel_id",
+      "description": "new unique numeric identifier for each individual"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "change",
+      "description": "year in which database fix was made"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "color_left",
+      "description": "color or combination of colours in the  juvenile left ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "color_right",
+      "description": "color or combination of colours in the  juvenile right ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd hh:mm:ss",
+      "name": "date_created",
+      "description": "date that juvenile record was first  entered in database"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "dna1",
+      "description": "8 alpha-numeric code to match DNA vials  to squirrel identity"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "dna2",
+      "description": "8 alpha-numeric code to match DNA vials  to squirrel identity"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "jvariable1",
+      "description": "generic variable"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "jvariable2",
+      "description": "generic variable"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "jvariable3",
+      "description": "generic variable"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "jvariable4",
+      "description": "generic variable"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd hh:mm:ss",
+      "name": "last_updated",
+      "description": "date that juvenile record was last  updated in database"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "notch",
+      "description": "notch in ear of juvenile for  identification"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "sex",
+      "description": "sex of the juvenile - Male (M) or Female  (F)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "grams",
+      "name": "weight",
+      "description": "weight of juvenile at nest 1"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "grams",
+      "name": "tagWT",
+      "description": "weight of juvenile when tagged"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "id",
+      "description": "unique numeric  identifier for each litter"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "nType1",
+      "description": "nest 1 construction type"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "nType2",
+      "description": "nest 2 construction type"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "date1",
+      "description": "date of first nest entry"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd hh:mm:ss",
+      "name": "date_created",
+      "description": "date that litter record was first entered  in database"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "food",
+      "description": "numeric code indicating type of  experimental manipulation"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "fieldBDate",
+      "description": "birth date"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "tagDt",
+      "description": "date when tagged/nest 2"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd hh:mm:ss",
+      "name": "last_updated",
+      "description": "date that litter record was last updated  in database"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locx",
+      "description": "spatial x coordinate of the mother's  midden"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locy",
+      "description": "spatial y coordinate of the mother's  midden"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "lvariable1",
+      "description": "generic variable"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "lvariable2",
+      "description": "generic variable"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "mTagLft",
+      "description": "a unique 5 or 6 digit alpha-numeric code  for eartag in mother left ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "mTagRt",
+      "description": "a unique 5 or 6 digit alpha-numeric code  for eartag in mother right ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "nx1",
+      "description": "spatial x coordinate of the nest 1"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "nx2",
+      "description": "spatial x coordinate of the nest 2"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "ny1",
+      "description": "spatial y coordinate of the nest 1"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "ny2",
+      "description": "spatial y coordinate of the nest 2"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "squirrel_id",
+      "description": "the unique numeric identifier of the  mother"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Midden",
+      "description": "reference location of the midden where the peanut butter was added"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "LocX",
+      "description": "spatial x coordinate of midden where the peanut butter was added"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "LocY",
+      "description": "spatial y coordinate of midden where the peanut butter was added"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "Date",
+      "description": "date of peanut butter addition"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "OBS",
+      "description": "two or three letters representing the observer initials"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "kilograms",
+      "name": "PB_Remaining",
+      "description": "amount of peanut butter remaining in bucket"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "PB_Added",
+      "description": "peanut butter added? (1 = yes, 0 = no)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "PB_Fate",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Nest",
+      "description": "nest in the bucket? (Y or N)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Mushrooms",
+      "description": "mushrooms in the bucket? (Y or N)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Contents",
+      "description": "comment field for other items in the bucket"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "PB_Remaining_code",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Sex",
+      "description": "sex of the squirrel -  Male (M) or Female (F)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "sire_id",
+      "description": "the unique numeric identifier of the mother"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "dam_id",
+      "description": "the unique numeric identifier of the father"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "BYEAR",
+      "description": "birth year of the squirrel"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Grid",
+      "description": "grid that squirrel was born on"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "f8",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "f9",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "f10",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "f11",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "f12",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "f13",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "f14",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "f15",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "f16",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "f17",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "squirrel_id",
+      "description": "unique numeric  identifier for each individual"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "grid",
+      "description": "grid that squirrel was born on"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "byear",
+      "description": "birth year of the squirrel"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "id",
+      "description": "unique numeric  identifier for each individual"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "census_date",
+      "description": "date of most recent census record for  squirrel"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "collar",
+      "description": "6 digit frequency of the radio collar  from most recent trapping record"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "colorlft",
+      "description": "color or combination of colours in the left ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd hh:mm:ss",
+      "name": "date_created",
+      "description": "date that squirrel record was first  created in database"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "gr",
+      "description": "grid that squirrel was most recently  trapped on"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd hh:mm:ss",
+      "name": "last_updated",
+      "description": "date that squirrel record was last  updated in database"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locx",
+      "description": "spatial x coordinate of most recent  census location"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locy",
+      "description": "spatial y coordinate of most recent  census location"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "reflo",
+      "description": "reference location from most recent  census -  up to 5 alpha-numeric  combinations including dots and minus signs"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "trap_date",
+      "description": "date of most recent trapping record for  squirrel"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "from_date",
+      "description": "date entered in database"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "grams",
+      "name": "bagWt",
+      "description": "weight of the handling bag"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "rattle",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "grams",
+      "name": "collWt",
+      "description": "weight of the radio collar, if present  (should be 4g for regular collars or 8g for AXY collars)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "color_fate",
+      "description": "fate of the color combination in squirrel ears"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd hh:mm:ss",
+      "name": "date_created",
+      "description": "date that trapping record was first  entered in database"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "radio",
+      "description": "fate of the collar"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd hh:mm:ss",
+      "name": "last_updated",
+      "description": "date that trapping record was last  updated in database"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locx",
+      "description": "spatial x coordinate of midden trapped"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locy",
+      "description": "spatial y coordinate of midden trapped"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "nipple",
+      "description": "nipple condition"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "obs",
+      "description": "two or three letters representing trapper initials"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "rep_con",
+      "description": "reproductive condition of the squirrel at  capture"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "grams",
+      "name": "scale_weight",
+      "description": "total weight with bag"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "tvariable1",
+      "description": "generic variable - starting in 2018 this  column contains the 4-digit fecal vial number"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "hh.mm",
+      "name": "tvariable2",
+      "description": "generic variable - starting in 2018 this  column contains the time the fecal sample was taken"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "tvariable3",
+      "description": "generic variable"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "tvariable4",
+      "description": "generic variable"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "tvariable5",
+      "description": "generic variable"
+    }
+  ],
+  "distribution": [
+    {
+      "type": "DataDownload",
+      "name": "behaviour",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "census",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "cones",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "dbaadmums",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "dbabehaviour",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "dbaflastall",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "dbajuvenile",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "dbamidden",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "dbatrapping",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "flastall",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "flastall2",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "historic_squirrel_ids",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "juvenile",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "litter",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "pb_data",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "pedigree",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "pedigree_clean",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "squirrel",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "squirrel_alias",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "trapping",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    }
+  ]
+}
+
+    </script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+   integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+   crossorigin=""/>
+ <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+   integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+   crossorigin=""></script>
+    <style>
+      body {
+        font-size: 16px;
+        font-family: sans-serif;
+        margin: 0 auto;
+        width: 800px;
+      }
+
+      #map {
+        width: 800px;
+        height: 300px;
+      }
+
+      #attributes-wrapper {
+        height: 300px;
+        overflow-y: scroll;
+      }
+
+      #jsonld-wrapper {
+        height: 300px;
+        overflow-y: scroll;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Kluane Red Squirrel Project Database</h1>
+    <p>The Kluane Red Squirrel Project is a long-term individual-based time-series of red squirrels in the southwestern Yukon Territory of Canada.  The data are organized into 20 tables within a relational mySQL database.  Individual tables are not available for download here as csv files.  If you are interested in accessing the data please contact Andrew McAdam at the University of Colorado.  Attributes are listed for all variables included within the 20 data tables.  Coding descriptions and more detailed descriptions of the variables can be found within the KRSP Database Appendix.</p>
+
+    <h2>Bibliographic</h2>
+
+    <ul>
+      <li>datePublished: 2020-02-04</li>
+      <li>keywords
+      <ul>
+        <li>ecology</li>
+        <li>evolution</li>
+        <li>energetics</li>
+        <li>behaviour</li>
+        <li>physiology</li>
+        <li>life history</li>
+        <li>genetics</li>
+        <li>red squirrel</li>
+        <li>Tamiasciurus hudsonicus</li>
+        <li>rodent</li>
+        <li>mammal</li>
+        <li>territorial</li>
+      </ul>
+      </li>
+      <li>funder: Natural Sciences and Engineering Research  Council of Canada, National Science Foundation, Polar Knowledge Canada</li>
+      <li>license: </li>
+    </ul>
+
+    <h2>Coverage</h2>
+
+    <h3>Temporal</h3>
+    <ul>
+      <li>beginDate: 1989</li>
+      <li>endDate: 2018</li>
+    </ul>
+
+    <h3>Spatial</h3>
+    <pre><code></code></pre>
+    <div id="map"></div>
+
+    <h2>Attributes</h2>
+
+    <div id="attributes-wrapper">
+      <table id="attributes">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>id</td>
+            <td>auto-filled with next available number</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>version</td>
+            <td>unknown</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>behaviour</td>
+            <td>recorded behavior (see behavior codes)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>color_left</td>
+            <td>color or combination of colours in the  left ear</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>color_right</td>
+            <td>color or combination of colours in the  right ear</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>comments</td>
+            <td>comments</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>date</td>
+            <td>date that behavior was recorded in the  field</td>
+            <td>yyyy-mm-dd</td>
+          </tr>
+          <tr>
+            <td>date_created</td>
+            <td>date that behavior record was first  entered in database</td>
+            <td>yyyy-mm-dd hh:mm:ss</td>
+          </tr>
+          <tr>
+            <td>detail</td>
+            <td>recorded behaviour detail (see behavior  codes)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>grid</td>
+            <td>two or three letters representing the  grid on which the data were collected</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>hand</td>
+            <td>indication of whether the squirrel was  eating left or right handed</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>last_updated</td>
+            <td>date that behavior was last updated in  database</td>
+            <td>yyyy-mm-dd hh:mm:ss</td>
+          </tr>
+          <tr>
+            <td>locx</td>
+            <td>spatial x coordinate of the recorded  behaviour</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>locy</td>
+            <td>spatial y coordinate of the recorded  behaviour</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>mode</td>
+            <td>the manner in which the data were collected</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>observer</td>
+            <td>two or three letters representing  initials of observer</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>squirrel_id</td>
+            <td>unique numeric identifier for each  individual</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>tag_left</td>
+            <td>a unique 5 or 6 digit alpha-numeric code  for eartag in left ear</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>tag_right</td>
+            <td>a unique 5 or 6 digit alpha-numeric code  for eartag in right ear</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>time</td>
+            <td>time that behaviour was recorded in the  field</td>
+            <td>hh:mm:ss</td>
+          </tr>
+          <tr>
+            <td>census_date</td>
+            <td>date of census  (05/15/YYYY or 08/15/YYYY) or date of change in ownership</td>
+            <td>yyyy-mm-dd</td>
+          </tr>
+          <tr>
+            <td>colorlft</td>
+            <td>color or combination of colours in the  left ear</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>colorrt</td>
+            <td>color or combination of colours in the right ear</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>date_created</td>
+            <td>date that census record was first entered  in database</td>
+            <td>yyyy-mm-dd hh:mm:ss</td>
+          </tr>
+          <tr>
+            <td>gr</td>
+            <td>two or three letters representing the  grid on which the data were collected</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>last_updated</td>
+            <td>date that census record was last updated  in database</td>
+            <td>yyyy-mm-dd hh:mm:ss</td>
+          </tr>
+          <tr>
+            <td>locx</td>
+            <td>spatial x coordinate of midden owned</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>locy</td>
+            <td>spatial y coordinate of midden owned</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>obs</td>
+            <td>two or three letters representing the  observer initials</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>reflo</td>
+            <td>reference location of the midden up to 5  alpha-numeric combinations including dots and minus signs</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>sex</td>
+            <td>sex of the squirrel - Male (M) or Female  (F)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>sq_fate</td>
+            <td>numeric code indicating the fate of the  squirrel in the census</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>taglft</td>
+            <td>a unique 5 or 6 digit alpha-numeric code  for eartag in left ear</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>tagrt</td>
+            <td>a unique 5 or 6 digit alpha-numeric code  for eartag in right ear</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>trap</td>
+            <td>were the traps on the midden hung in the  fall - Y or N</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Grid</td>
+            <td>two or three letters  representing the grid on which the data were collected</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Year</td>
+            <td>year in which data were collected</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Stake</td>
+            <td>grid stake nearest the cone count tree</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>LocX</td>
+            <td>spatial x coordinate of the cone count  tree</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>LocY</td>
+            <td>spatial y coordinate of the cone count  tree</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>DBH</td>
+            <td>diameter at breast height of cone count  tree (not updated each year)</td>
+            <td>cm</td>
+          </tr>
+          <tr>
+            <td>Distance</td>
+            <td>distance of cone count tree from the  nearest grid stake</td>
+            <td>m</td>
+          </tr>
+          <tr>
+            <td>Direction</td>
+            <td>direction of cone count tree from nearest  grid stake</td>
+            <td>degrees</td>
+          </tr>
+          <tr>
+            <td>Per</td>
+            <td>percent cover of cones in top 3 m of tree</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>New_Tree</td>
+            <td>is this a new tree counted for the first  time? - Y or N</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Status</td>
+            <td>status of cone count tree relative to  amount of bark beetle damage</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Count_Date</td>
+            <td>date on which the cones were counted</td>
+            <td>yyyy-mm-dd</td>
+          </tr>
+          <tr>
+            <td>NumNew</td>
+            <td>number of new cones in top 3 m of tree</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Comments</td>
+            <td>comments</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Grid</td>
+            <td>two or three letters representing the  grid on which the data were collected</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>BR</td>
+            <td>breeding status</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>YR</td>
+            <td>year in which data were collected</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Age</td>
+            <td>age of female in current year</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>LN</td>
+            <td>litter number</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>tagLft</td>
+            <td>a unique 5 or 6 digit alpha-numeric code  for eartag in left ear</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>tagRt</td>
+            <td>a unique 5 or 6 digit alpha-numeric code  for eartag in right ear</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>tagLftNum</td>
+            <td>a unique 5 or 6 digit numeric code for  eartag in left ear</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>tagRtNum</td>
+            <td>a unique 5 or 6 digit numeric code for  eartag in right ear</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>locX</td>
+            <td>spatial x coordinate of the mother midden</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>locY</td>
+            <td>spatial y coordinate of the mother midden</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Ratio</td>
+            <td>proportion of males in litter</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Food</td>
+            <td>numeric code indicating type of  experimental manipulation</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>KidE</td>
+            <td>number of kids to emergence</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>KidW</td>
+            <td>number of kids to weaning</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>KidF</td>
+            <td>number of kids surviving to August 1</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>KidS</td>
+            <td>number of kids surviving to May 1</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>MWt</td>
+            <td>mother weight within 10 days after birth</td>
+            <td>grams</td>
+          </tr>
+          <tr>
+            <td>MWt2</td>
+            <td>mother weight 1 week either side of day  70</td>
+            <td>grams</td>
+          </tr>
+          <tr>
+            <td>LitWt</td>
+            <td>unknown</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>KidWt</td>
+            <td>unknown</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>EX</td>
+            <td>unknown</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Pre</td>
+            <td>litter in previous year? (1 = no, 2 =  yes)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>LSize</td>
+            <td>litter size</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Lsc</td>
+            <td>litter size code</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>FU</td>
+            <td>mother killed by human causes</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Mom</td>
+            <td>unknown</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>MomB</td>
+            <td>mother behavior</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>MomM</td>
+            <td>fate of mother midden</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>MomS</td>
+            <td>mother location in spring</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>MomF</td>
+            <td>unknown</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Marker</td>
+            <td>unique combination of LN + YR + taglft +  tagrt</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>BDate</td>
+            <td>estimated birthdate of any lost litters  (new in 1997)</td>
+            <td>yyyy-mm-dd</td>
+          </tr>
+          <tr>
+            <td>Experiment</td>
+            <td>unknown</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>col</td>
+            <td>combination of colours in the left/right  ears</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>color_left</td>
+            <td>color or combination of colours in the left ear</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>color_right</td>
+            <td>color or combination of colours in the right ear</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>bhour</td>
+            <td>hour that behaviour was recorded in the  field</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>bmin</td>
+            <td>minute that behaviour was recorded in the  field</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>bsec</td>
+            <td>second that behaviour was recorded in the  field</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>beh</td>
+            <td>recorded behavior (see behavior codes)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>det</td>
+            <td>recorded behaviour detail (see behavior  codes)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>exp</td>
+            <td>relative spatial location/exposure (new  in 2004, previously entered occasionally in comments)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>terr</td>
+            <td>on territory? - Y or N</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>locX</td>
+            <td>spatial x coordinate of the recorded  behaviour</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>locY</td>
+            <td>spatial y coordinate of the recorded  behaviour</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>UTMX</td>
+            <td>unknown</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>UTMY</td>
+            <td>unknown</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>datasource</td>
+            <td>unknown</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Sex</td>
+            <td>sex of the squirrel - Male (M) or Female  (F)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>dateS</td>
+            <td>start date, date of earliest record for  this squirrel regardless of file (should be tagging record)</td>
+            <td>yyyy-mm-dd</td>
+          </tr>
+          <tr>
+            <td>f1</td>
+            <td>first fate from earliest record for this  squirrel regardless of file (should be tagging record)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>BYear</td>
+            <td>birth year from juvenile tagging record -  if tagged as an adult female, the birth year is the previous year if she was  a small, pink non-breeder all year, otherwise, the birth year is assigned two  years previous.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>bCert</td>
+            <td>birth year certainty - yes if tagged as  juvenile, no otherwise</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>newGr</td>
+            <td>grid from the last record for this  squirrel regardless of file</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>dateE</td>
+            <td>end date, from the last record for this  squirrel regardless of file</td>
+            <td>yyyy-mm-dd</td>
+          </tr>
+          <tr>
+            <td>f2</td>
+            <td>last fate, from the last record for this  squirrel regardless of file</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>locX</td>
+            <td>spatial x coordinate of last known  location</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>locY</td>
+            <td>spatial y coordinate of last known  location</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>litter_id</td>
+            <td>unique numeric identifier for each litter</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>squirrel_id</td>
+            <td>the unique numeric identifier of the  juvenile</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>mother_id</td>
+            <td>the unique numeric identifier of the  mother</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>yr</td>
+            <td>year in which data were collected</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>br</td>
+            <td>breeding status</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>date</td>
+            <td>date of first nest entry</td>
+            <td>yyyy-mm-dd</td>
+          </tr>
+          <tr>
+            <td>ln</td>
+            <td>litter number</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>mTagLft</td>
+            <td>a unique 5 or 6 digit alpha-numeric code for eartag in mother left ear</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>mTagRt</td>
+            <td>a unique 5 or 6 digit alpha-numeric code for eartag in mother right ear</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>mTagLftNum</td>
+            <td>a unique 5 or 6 digit numeric code for  eartag in mother left ear</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>mTagRtNum</td>
+            <td>a unique 5 or 6 digit numeric code for  eartag in mother right ear</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>locX</td>
+            <td>spatial x coordinate of mother midden</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>locY</td>
+            <td>spatial y coordinate of mother midden</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>tagLft</td>
+            <td>a unique 5 or 6 digit alpha-numeric code  for eartag in juvenile left ear</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>tagRt</td>
+            <td>a unique 5 or 6 digit alpha-numeric code  for eartag in juvenile right ear</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>tagLftNum</td>
+            <td>a unique 5 or 6 digit numeric code for  eartag in juvenile left ear</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>tagRtNum</td>
+            <td>a unique 5 or 6 digit numeric code for  eartag in juvenile right ear</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>color</td>
+            <td>combination of colours in the  juvenile left/right ears</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>color_left</td>
+            <td>color or combination of colours in  juvenile left ear</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>color_right</td>
+            <td>color or combination of colours in  juvenile right ear</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>NX1</td>
+            <td>spatial x coordinate of nest 1 location</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>NY1</td>
+            <td>spatial y coordinate of nest 1 location</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>NType1</td>
+            <td>nest 1 construction type (new in 2004,  but entered retroactively for previous years)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>NLoc1</td>
+            <td>nest 1 spatial/territory characteristics</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>NX2</td>
+            <td>spatial x coordinate of nest 2 location</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>NY2</td>
+            <td>spatial y coordinate of nest 2 location</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>NType2</td>
+            <td>nest 2 construction type</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>NLoc2</td>
+            <td>nest 2 spatial/territory characteristics</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>BDate</td>
+            <td>birth date</td>
+            <td>yyyy-mm-dd</td>
+          </tr>
+          <tr>
+            <td>FieldBDate</td>
+            <td>birth date determined in the field</td>
+            <td>yyyy-mm-dd</td>
+          </tr>
+          <tr>
+            <td>KidWt</td>
+            <td>mean litter weight (used in 1992 and 1993  only)</td>
+            <td>grams</td>
+          </tr>
+          <tr>
+            <td>Weight</td>
+            <td>weight of young at nest 1</td>
+            <td>grams</td>
+          </tr>
+          <tr>
+            <td>BSizeN1</td>
+            <td>zygomatic width at nest 1 (new in 1999)</td>
+            <td>mm</td>
+          </tr>
+          <tr>
+            <td>Con1</td>
+            <td>condition of young at nest 1</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Flee1</td>
+            <td>flea load of young at nest 1</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ACT1</td>
+            <td>activity of young at nest 1</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>TagDt</td>
+            <td>date when tagged/nest 2</td>
+            <td>yyyy-mm-dd</td>
+          </tr>
+          <tr>
+            <td>TagWt</td>
+            <td>weight of young when tagged</td>
+            <td>grams</td>
+          </tr>
+          <tr>
+            <td>BSizeN2</td>
+            <td>zygomatic width at nest 2 (new in 1999)</td>
+            <td>mm</td>
+          </tr>
+          <tr>
+            <td>Con2</td>
+            <td>condition of young at nest 2</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Flee2</td>
+            <td>flea load of young at nest 2</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Act2</td>
+            <td>activity of young at nest 2</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>DateSeen</td>
+            <td>day young seen out of nest</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Wt70</td>
+            <td>weight of young at 70 days</td>
+            <td>grams</td>
+          </tr>
+          <tr>
+            <td>DateL</td>
+            <td>date last seen</td>
+            <td>yyyy-mm-dd</td>
+          </tr>
+          <tr>
+            <td>Wean</td>
+            <td>weaning location</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>WSpat</td>
+            <td>weaning spatial location</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>F</td>
+            <td>fall location</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>FSpat</td>
+            <td>fall spatial location</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Spr</td>
+            <td>spring location</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>SSpat</td>
+            <td>spring spatial location</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>MCO</td>
+            <td>unknown</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>BalWt_1</td>
+            <td>unknown</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>BalWt_2</td>
+            <td>unknown</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>DNA1</td>
+            <td>8 alpha-numeric code to match DNA vials to squirrel identity</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>DNA2</td>
+            <td>8 alpha-numeric code to match DNA vials to squirrel identity</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>squirrel_id</td>
+            <td>a unique numeric identifier for each  individual</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>date</td>
+            <td>date of census (05/15/YYYY or 08/15/YYYY)  or date of change in midden occupancy</td>
+            <td>yyyy-mm-dd</td>
+          </tr>
+          <tr>
+            <td>obs</td>
+            <td>two or three letters representing the observer initials</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>locX</td>
+            <td>spatial x coordinate of midden</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>locY</td>
+            <td>spatial y coordinate of midden</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>color_left</td>
+            <td>color or combination of colours in left ear</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>color_right</td>
+            <td>color or combination of colours in right ear</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>fate</td>
+            <td>fate of midden ownership</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>mcon</td>
+            <td>midden condition</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>act</td>
+            <td>sign of activity at midden (new in 1997)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>def</td>
+            <td>strength of defence</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ft</td>
+            <td>15 (do not change, used by yearly  analysis programs)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>cones</td>
+            <td>cached cones on the midden</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>nest</td>
+            <td>one or more nests within a 10m-diameter  circle around center of midden - Y or N</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>date</td>
+            <td>date squirrel trapped</td>
+            <td>yyyy-mm-dd</td>
+          </tr>
+          <tr>
+            <td>ft</td>
+            <td>fate of the squirrel</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>color</td>
+            <td>combination of colours in the left/right  ears</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>collar</td>
+            <td>6 digit frequency of the radio collar  (e.g. 151348)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>radio</td>
+            <td>fate of the collar (new in 1996)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>locX</td>
+            <td>spatial x coordinate of midden trapped</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>locY</td>
+            <td>spatial y coordinate of midden trapped</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>wgt</td>
+            <td>calculation of squirrel weight (scale  weight-bagwt-collwt)</td>
+            <td>grams</td>
+          </tr>
+          <tr>
+            <td>BSize</td>
+            <td>zygomatic width/body size (new in 1999)</td>
+            <td>mm</td>
+          </tr>
+          <tr>
+            <td>RC</td>
+            <td>reproductive condition of the squirrel at  capture</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>NC</td>
+            <td>nipple condition</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>CCon</td>
+            <td>coat condition (discontinued in 1999)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>R</td>
+            <td>behavior on release</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>RattLocX</td>
+            <td>unknown</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>RattLocY</td>
+            <td>unknown</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>BrStatus</td>
+            <td>breeding status</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>rhf</td>
+            <td>unknown</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>st</td>
+            <td>unknown</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>OldTagL</td>
+            <td>old taglft when there is a retag (ft = 3  or 13) or when animal is new (ft = 2, 6, or 7)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>OldTagR</td>
+            <td>old tagrt</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>TagHist</td>
+            <td>comment field</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>DataSource</td>
+            <td>where data sourced from (new in 2004) -  databook or handheld</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>poop</td>
+            <td>fecal vial number</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ptime</td>
+            <td>time that fecal sample taken</td>
+            <td>hh:mm:ss</td>
+          </tr>
+          <tr>
+            <td>OldTagLAlpha</td>
+            <td>unknown</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>OldTagRAlpha</td>
+            <td>unknown</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>id</td>
+            <td>unknownauto-filled with next available number</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>dates</td>
+            <td>start date, date of earliest record for  this squirrel regardless of file (should be tagging record)</td>
+            <td>yyyy-mm-dd</td>
+          </tr>
+          <tr>
+            <td>byear</td>
+            <td>birth year from juvenile tagging record -  if tagged as an adult female, the birth year is the previous year if she was  a small, pink non-breeder all year, otherwise, the birth year is assigned two  years previous.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>dam_id</td>
+            <td>the unique numeric identifier of the mother</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>sire_id</td>
+            <td>the unique numeric identifier of the father</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>bcert</td>
+            <td>birth year certainty - yes if tagged as  juvenile, no otherwise</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>newgr</td>
+            <td>grid from the last record for this  squirrel regardless of file</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>newsex</td>
+            <td>unknown</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>datee</td>
+            <td>end date, from the last record for this  squirrel regardless of file</td>
+            <td>yyyy-mm-dd</td>
+          </tr>
+          <tr>
+            <td>old_squirrel_id</td>
+            <td>old unique numeric identifier for each individual</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>new_squirrel_id</td>
+            <td>new unique numeric identifier for each individual</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>change</td>
+            <td>year in which database fix was made</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>color_left</td>
+            <td>color or combination of colours in the  juvenile left ear</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>color_right</td>
+            <td>color or combination of colours in the  juvenile right ear</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>date_created</td>
+            <td>date that juvenile record was first  entered in database</td>
+            <td>yyyy-mm-dd hh:mm:ss</td>
+          </tr>
+          <tr>
+            <td>dna1</td>
+            <td>8 alpha-numeric code to match DNA vials  to squirrel identity</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>dna2</td>
+            <td>8 alpha-numeric code to match DNA vials  to squirrel identity</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>jvariable1</td>
+            <td>generic variable</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>jvariable2</td>
+            <td>generic variable</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>jvariable3</td>
+            <td>generic variable</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>jvariable4</td>
+            <td>generic variable</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>last_updated</td>
+            <td>date that juvenile record was last  updated in database</td>
+            <td>yyyy-mm-dd hh:mm:ss</td>
+          </tr>
+          <tr>
+            <td>notch</td>
+            <td>notch in ear of juvenile for  identification</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>sex</td>
+            <td>sex of the juvenile - Male (M) or Female  (F)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>weight</td>
+            <td>weight of juvenile at nest 1</td>
+            <td>grams</td>
+          </tr>
+          <tr>
+            <td>tagWT</td>
+            <td>weight of juvenile when tagged</td>
+            <td>grams</td>
+          </tr>
+          <tr>
+            <td>id</td>
+            <td>unique numeric  identifier for each litter</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>nType1</td>
+            <td>nest 1 construction type</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>nType2</td>
+            <td>nest 2 construction type</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>date1</td>
+            <td>date of first nest entry</td>
+            <td>yyyy-mm-dd</td>
+          </tr>
+          <tr>
+            <td>date_created</td>
+            <td>date that litter record was first entered  in database</td>
+            <td>yyyy-mm-dd hh:mm:ss</td>
+          </tr>
+          <tr>
+            <td>food</td>
+            <td>numeric code indicating type of  experimental manipulation</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>fieldBDate</td>
+            <td>birth date</td>
+            <td>yyyy-mm-dd</td>
+          </tr>
+          <tr>
+            <td>tagDt</td>
+            <td>date when tagged/nest 2</td>
+            <td>yyyy-mm-dd</td>
+          </tr>
+          <tr>
+            <td>last_updated</td>
+            <td>date that litter record was last updated  in database</td>
+            <td>yyyy-mm-dd hh:mm:ss</td>
+          </tr>
+          <tr>
+            <td>locx</td>
+            <td>spatial x coordinate of the mother's  midden</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>locy</td>
+            <td>spatial y coordinate of the mother's  midden</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>lvariable1</td>
+            <td>generic variable</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>lvariable2</td>
+            <td>generic variable</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>mTagLft</td>
+            <td>a unique 5 or 6 digit alpha-numeric code  for eartag in mother left ear</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>mTagRt</td>
+            <td>a unique 5 or 6 digit alpha-numeric code  for eartag in mother right ear</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>nx1</td>
+            <td>spatial x coordinate of the nest 1</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>nx2</td>
+            <td>spatial x coordinate of the nest 2</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ny1</td>
+            <td>spatial y coordinate of the nest 1</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ny2</td>
+            <td>spatial y coordinate of the nest 2</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>squirrel_id</td>
+            <td>the unique numeric identifier of the  mother</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Midden</td>
+            <td>reference location of the midden where the peanut butter was added</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>LocX</td>
+            <td>spatial x coordinate of midden where the peanut butter was added</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>LocY</td>
+            <td>spatial y coordinate of midden where the peanut butter was added</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Date</td>
+            <td>date of peanut butter addition</td>
+            <td>yyyy-mm-dd</td>
+          </tr>
+          <tr>
+            <td>OBS</td>
+            <td>two or three letters representing the observer initials</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>PB_Remaining</td>
+            <td>amount of peanut butter remaining in bucket</td>
+            <td>kilograms</td>
+          </tr>
+          <tr>
+            <td>PB_Added</td>
+            <td>peanut butter added? (1 = yes, 0 = no)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>PB_Fate</td>
+            <td>unknown</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Nest</td>
+            <td>nest in the bucket? (Y or N)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Mushrooms</td>
+            <td>mushrooms in the bucket? (Y or N)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Contents</td>
+            <td>comment field for other items in the bucket</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>PB_Remaining_code</td>
+            <td>unknown</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Sex</td>
+            <td>sex of the squirrel -  Male (M) or Female (F)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>sire_id</td>
+            <td>the unique numeric identifier of the mother</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>dam_id</td>
+            <td>the unique numeric identifier of the father</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>BYEAR</td>
+            <td>birth year of the squirrel</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Grid</td>
+            <td>grid that squirrel was born on</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>f8</td>
+            <td>unknown</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>f9</td>
+            <td>unknown</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>f10</td>
+            <td>unknown</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>f11</td>
+            <td>unknown</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>f12</td>
+            <td>unknown</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>f13</td>
+            <td>unknown</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>f14</td>
+            <td>unknown</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>f15</td>
+            <td>unknown</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>f16</td>
+            <td>unknown</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>f17</td>
+            <td>unknown</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>squirrel_id</td>
+            <td>unique numeric  identifier for each individual</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>grid</td>
+            <td>grid that squirrel was born on</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>byear</td>
+            <td>birth year of the squirrel</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>id</td>
+            <td>unique numeric  identifier for each individual</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>census_date</td>
+            <td>date of most recent census record for  squirrel</td>
+            <td>yyyy-mm-dd</td>
+          </tr>
+          <tr>
+            <td>collar</td>
+            <td>6 digit frequency of the radio collar  from most recent trapping record</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>colorlft</td>
+            <td>color or combination of colours in the left ear</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>date_created</td>
+            <td>date that squirrel record was first  created in database</td>
+            <td>yyyy-mm-dd hh:mm:ss</td>
+          </tr>
+          <tr>
+            <td>gr</td>
+            <td>grid that squirrel was most recently  trapped on</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>last_updated</td>
+            <td>date that squirrel record was last  updated in database</td>
+            <td>yyyy-mm-dd hh:mm:ss</td>
+          </tr>
+          <tr>
+            <td>locx</td>
+            <td>spatial x coordinate of most recent  census location</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>locy</td>
+            <td>spatial y coordinate of most recent  census location</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>reflo</td>
+            <td>reference location from most recent  census -  up to 5 alpha-numeric  combinations including dots and minus signs</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>trap_date</td>
+            <td>date of most recent trapping record for  squirrel</td>
+            <td>yyyy-mm-dd</td>
+          </tr>
+          <tr>
+            <td>from_date</td>
+            <td>date entered in database</td>
+            <td>yyyy-mm-dd</td>
+          </tr>
+          <tr>
+            <td>bagWt</td>
+            <td>weight of the handling bag</td>
+            <td>grams</td>
+          </tr>
+          <tr>
+            <td>rattle</td>
+            <td>unknown</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>collWt</td>
+            <td>weight of the radio collar, if present  (should be 4g for regular collars or 8g for AXY collars)</td>
+            <td>grams</td>
+          </tr>
+          <tr>
+            <td>color_fate</td>
+            <td>fate of the color combination in squirrel ears</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>date_created</td>
+            <td>date that trapping record was first  entered in database</td>
+            <td>yyyy-mm-dd hh:mm:ss</td>
+          </tr>
+          <tr>
+            <td>radio</td>
+            <td>fate of the collar</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>last_updated</td>
+            <td>date that trapping record was last  updated in database</td>
+            <td>yyyy-mm-dd hh:mm:ss</td>
+          </tr>
+          <tr>
+            <td>locx</td>
+            <td>spatial x coordinate of midden trapped</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>locy</td>
+            <td>spatial y coordinate of midden trapped</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>nipple</td>
+            <td>nipple condition</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>obs</td>
+            <td>two or three letters representing trapper initials</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>rep_con</td>
+            <td>reproductive condition of the squirrel at  capture</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>scale_weight</td>
+            <td>total weight with bag</td>
+            <td>grams</td>
+          </tr>
+          <tr>
+            <td>tvariable1</td>
+            <td>generic variable - starting in 2018 this  column contains the 4-digit fecal vial number</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>tvariable2</td>
+            <td>generic variable - starting in 2018 this  column contains the time the fecal sample was taken</td>
+            <td>hh.mm</td>
+          </tr>
+          <tr>
+            <td>tvariable3</td>
+            <td>generic variable</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>tvariable4</td>
+            <td>generic variable</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>tvariable5</td>
+            <td>generic variable</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Distribution</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>File</th>
+          <th>Format</th>
+          <th>&nbsp;</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>behaviour</td>
+          <td>csv</td>
+          <td><a href="">Download</a></td>
+        </tr>
+        <tr>
+          <td>census</td>
+          <td>csv</td>
+          <td><a href="">Download</a></td>
+        </tr>
+        <tr>
+          <td>cones</td>
+          <td>csv</td>
+          <td><a href="">Download</a></td>
+        </tr>
+        <tr>
+          <td>dbaadmums</td>
+          <td>csv</td>
+          <td><a href="">Download</a></td>
+        </tr>
+        <tr>
+          <td>dbabehaviour</td>
+          <td>csv</td>
+          <td><a href="">Download</a></td>
+        </tr>
+        <tr>
+          <td>dbaflastall</td>
+          <td>csv</td>
+          <td><a href="">Download</a></td>
+        </tr>
+        <tr>
+          <td>dbajuvenile</td>
+          <td>csv</td>
+          <td><a href="">Download</a></td>
+        </tr>
+        <tr>
+          <td>dbamidden</td>
+          <td>csv</td>
+          <td><a href="">Download</a></td>
+        </tr>
+        <tr>
+          <td>dbatrapping</td>
+          <td>csv</td>
+          <td><a href="">Download</a></td>
+        </tr>
+        <tr>
+          <td>flastall</td>
+          <td>csv</td>
+          <td><a href="">Download</a></td>
+        </tr>
+        <tr>
+          <td>flastall2</td>
+          <td>csv</td>
+          <td><a href="">Download</a></td>
+        </tr>
+        <tr>
+          <td>historic_squirrel_ids</td>
+          <td>csv</td>
+          <td><a href="">Download</a></td>
+        </tr>
+        <tr>
+          <td>juvenile</td>
+          <td>csv</td>
+          <td><a href="">Download</a></td>
+        </tr>
+        <tr>
+          <td>litter</td>
+          <td>csv</td>
+          <td><a href="">Download</a></td>
+        </tr>
+        <tr>
+          <td>pb_data</td>
+          <td>csv</td>
+          <td><a href="">Download</a></td>
+        </tr>
+        <tr>
+          <td>pedigree</td>
+          <td>csv</td>
+          <td><a href="">Download</a></td>
+        </tr>
+        <tr>
+          <td>pedigree_clean</td>
+          <td>csv</td>
+          <td><a href="">Download</a></td>
+        </tr>
+        <tr>
+          <td>squirrel</td>
+          <td>csv</td>
+          <td><a href="">Download</a></td>
+        </tr>
+        <tr>
+          <td>squirrel_alias</td>
+          <td>csv</td>
+          <td><a href="">Download</a></td>
+        </tr>
+        <tr>
+          <td>trapping</td>
+          <td>csv</td>
+          <td><a href="">Download</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Debug</h2>
+    <div id="jsonld-wrapper">
+      <pre id="jsonld">
+        <code>{
+  &quot;@context&quot;: &quot;http://schema.org&quot;,
+  &quot;type&quot;: &quot;Dataset&quot;,
+  &quot;name&quot;: &quot;Kluane Red Squirrel Project Database&quot;,
+  &quot;creator&quot;: [
+    {
+      &quot;type&quot;: &quot;Person&quot;,
+      &quot;id&quot;: &quot;0000-0001-6317-038X&quot;,
+      &quot;givenName&quot;: &quot;Stan&quot;,
+      &quot;familyName&quot;: &quot;Boutin&quot;,
+      &quot;email&quot;: &quot;sboutin@ualberta.ca&quot;,
+      &quot;affiliation&quot;: &quot;University of Alberta&quot;
+    },
+    {
+      &quot;type&quot;: &quot;Person&quot;,
+      &quot;id&quot;: &quot;0000-0001-7323-2572&quot;,
+      &quot;givenName&quot;: &quot;Andrew&quot;,
+      &quot;familyName&quot;: &quot;McAdam&quot;,
+      &quot;email&quot;: &quot;andrew.mcadam@colorado.edu&quot;,
+      &quot;affiliation&quot;: &quot;University of Colorado&quot;
+    },
+    {
+      &quot;type&quot;: &quot;Person&quot;,
+      &quot;id&quot;: &quot;0000-0002-3058-265X&quot;,
+      &quot;givenName&quot;: &quot;Ben&quot;,
+      &quot;familyName&quot;: &quot;Dantzer&quot;,
+      &quot;email&quot;: &quot;dantzer@umich.edu&quot;,
+      &quot;affiliation&quot;: &quot;University of Michigan&quot;
+    },
+    {
+      &quot;type&quot;: &quot;Person&quot;,
+      &quot;id&quot;: &quot;0000-0003-0849-7181&quot;,
+      &quot;givenName&quot;: &quot;Jeffrey&quot;,
+      &quot;familyName&quot;: &quot;Lane&quot;,
+      &quot;email&quot;: &quot;jeffrey.lane@usask.ca&quot;,
+      &quot;affiliation&quot;: &quot;University of Saskatchewan&quot;
+    }
+  ],
+  &quot;description&quot;: &quot;The Kluane Red Squirrel Project is a long-term individual-based time-series of red squirrels in the southwestern Yukon Territory of Canada.  The data are organized into 20 tables within a relational mySQL database.  Individual tables are not available for download here as csv files.  If you are interested in accessing the data please contact Andrew McAdam at the University of Colorado.  Attributes are listed for all variables included within the 20 data tables.  Coding descriptions and more detailed descriptions of the variables can be found within the KRSP Database Appendix.&quot;,
+  &quot;datePublished&quot;: &quot;2020-02-04&quot;,
+  &quot;keywords&quot;: [&quot;ecology&quot;, &quot;evolution&quot;, &quot;energetics&quot;, &quot; behaviour&quot;, &quot;physiology&quot;, &quot;life history&quot;, &quot;genetics&quot;, &quot;red squirrel&quot;, &quot;Tamiasciurus hudsonicus&quot;, &quot;rodent&quot;, &quot;mammal&quot;, &quot;territorial&quot;],
+  &quot;funder&quot;: &quot;Natural Sciences and Engineering Research  Council of Canada, National Science Foundation, Polar Knowledge Canada&quot;,
+  &quot;temporalCoverage&quot;: &quot;1989/2018&quot;,
+  &quot;license&quot;: null,
+  &quot;spatialCoverage&quot;: {
+    &quot;type&quot;: &quot;Place&quot;,
+    &quot;name&quot;: &quot;This data was collected from study sites in  Kluane National Park in the southwestern Yukon, Canada. The  general study area is located in a broad glacial valley (Shakwak Trench) that  is approximately 900 m above sea level.&quot;,
+    &quot;geo&quot;: {
+      &quot;type&quot;: &quot;GeoShape&quot;,
+      &quot;box&quot;: &quot;61.59356 -137.498578 60.745973 -139.465131&quot;
+    }
+  },
+  &quot;variableMeasured&quot;: [
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;id&quot;,
+      &quot;description&quot;: &quot;auto-filled with next available number&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;version&quot;,
+      &quot;description&quot;: &quot;unknown&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;behaviour&quot;,
+      &quot;description&quot;: &quot;recorded behavior (see behavior codes)&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;color_left&quot;,
+      &quot;description&quot;: &quot;color or combination of colours in the  left ear&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;color_right&quot;,
+      &quot;description&quot;: &quot;color or combination of colours in the  right ear&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;comments&quot;,
+      &quot;description&quot;: &quot;comments&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;yyyy-mm-dd&quot;,
+      &quot;name&quot;: &quot;date&quot;,
+      &quot;description&quot;: &quot;date that behavior was recorded in the  field&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;yyyy-mm-dd hh:mm:ss&quot;,
+      &quot;name&quot;: &quot;date_created&quot;,
+      &quot;description&quot;: &quot;date that behavior record was first  entered in database&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;detail&quot;,
+      &quot;description&quot;: &quot;recorded behaviour detail (see behavior  codes)&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;grid&quot;,
+      &quot;description&quot;: &quot;two or three letters representing the  grid on which the data were collected&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;hand&quot;,
+      &quot;description&quot;: &quot;indication of whether the squirrel was  eating left or right handed&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;yyyy-mm-dd hh:mm:ss&quot;,
+      &quot;name&quot;: &quot;last_updated&quot;,
+      &quot;description&quot;: &quot;date that behavior was last updated in  database&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;locx&quot;,
+      &quot;description&quot;: &quot;spatial x coordinate of the recorded  behaviour&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;locy&quot;,
+      &quot;description&quot;: &quot;spatial y coordinate of the recorded  behaviour&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;mode&quot;,
+      &quot;description&quot;: &quot;the manner in which the data were collected&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;observer&quot;,
+      &quot;description&quot;: &quot;two or three letters representing  initials of observer&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;squirrel_id&quot;,
+      &quot;description&quot;: &quot;unique numeric identifier for each  individual&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;tag_left&quot;,
+      &quot;description&quot;: &quot;a unique 5 or 6 digit alpha-numeric code  for eartag in left ear&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;tag_right&quot;,
+      &quot;description&quot;: &quot;a unique 5 or 6 digit alpha-numeric code  for eartag in right ear&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;hh:mm:ss&quot;,
+      &quot;name&quot;: &quot;time&quot;,
+      &quot;description&quot;: &quot;time that behaviour was recorded in the  field&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;yyyy-mm-dd&quot;,
+      &quot;name&quot;: &quot;census_date&quot;,
+      &quot;description&quot;: &quot;date of census  (05/15/YYYY or 08/15/YYYY) or date of change in ownership&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;colorlft&quot;,
+      &quot;description&quot;: &quot;color or combination of colours in the  left ear&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;colorrt&quot;,
+      &quot;description&quot;: &quot;color or combination of colours in the right ear&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;yyyy-mm-dd hh:mm:ss&quot;,
+      &quot;name&quot;: &quot;date_created&quot;,
+      &quot;description&quot;: &quot;date that census record was first entered  in database&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;gr&quot;,
+      &quot;description&quot;: &quot;two or three letters representing the  grid on which the data were collected&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;yyyy-mm-dd hh:mm:ss&quot;,
+      &quot;name&quot;: &quot;last_updated&quot;,
+      &quot;description&quot;: &quot;date that census record was last updated  in database&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;locx&quot;,
+      &quot;description&quot;: &quot;spatial x coordinate of midden owned&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;locy&quot;,
+      &quot;description&quot;: &quot;spatial y coordinate of midden owned&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;obs&quot;,
+      &quot;description&quot;: &quot;two or three letters representing the  observer initials&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;reflo&quot;,
+      &quot;description&quot;: &quot;reference location of the midden up to 5  alpha-numeric combinations including dots and minus signs&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;sex&quot;,
+      &quot;description&quot;: &quot;sex of the squirrel - Male (M) or Female  (F)&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;sq_fate&quot;,
+      &quot;description&quot;: &quot;numeric code indicating the fate of the  squirrel in the census&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;taglft&quot;,
+      &quot;description&quot;: &quot;a unique 5 or 6 digit alpha-numeric code  for eartag in left ear&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;tagrt&quot;,
+      &quot;description&quot;: &quot;a unique 5 or 6 digit alpha-numeric code  for eartag in right ear&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;trap&quot;,
+      &quot;description&quot;: &quot;were the traps on the midden hung in the  fall - Y or N&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;Grid&quot;,
+      &quot;description&quot;: &quot;two or three letters  representing the grid on which the data were collected&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;Year&quot;,
+      &quot;description&quot;: &quot;year in which data were collected&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;Stake&quot;,
+      &quot;description&quot;: &quot;grid stake nearest the cone count tree&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;LocX&quot;,
+      &quot;description&quot;: &quot;spatial x coordinate of the cone count  tree&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;LocY&quot;,
+      &quot;description&quot;: &quot;spatial y coordinate of the cone count  tree&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;cm&quot;,
+      &quot;name&quot;: &quot;DBH&quot;,
+      &quot;description&quot;: &quot;diameter at breast height of cone count  tree (not updated each year)&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;m&quot;,
+      &quot;name&quot;: &quot;Distance&quot;,
+      &quot;description&quot;: &quot;distance of cone count tree from the  nearest grid stake&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;degrees&quot;,
+      &quot;name&quot;: &quot;Direction&quot;,
+      &quot;description&quot;: &quot;direction of cone count tree from nearest  grid stake&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;Per&quot;,
+      &quot;description&quot;: &quot;percent cover of cones in top 3 m of tree&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;New_Tree&quot;,
+      &quot;description&quot;: &quot;is this a new tree counted for the first  time? - Y or N&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;Status&quot;,
+      &quot;description&quot;: &quot;status of cone count tree relative to  amount of bark beetle damage&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;yyyy-mm-dd&quot;,
+      &quot;name&quot;: &quot;Count_Date&quot;,
+      &quot;description&quot;: &quot;date on which the cones were counted&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;NumNew&quot;,
+      &quot;description&quot;: &quot;number of new cones in top 3 m of tree&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;Comments&quot;,
+      &quot;description&quot;: &quot;comments&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;Grid&quot;,
+      &quot;description&quot;: &quot;two or three letters representing the  grid on which the data were collected&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;BR&quot;,
+      &quot;description&quot;: &quot;breeding status&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;YR&quot;,
+      &quot;description&quot;: &quot;year in which data were collected&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;Age&quot;,
+      &quot;description&quot;: &quot;age of female in current year&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;LN&quot;,
+      &quot;description&quot;: &quot;litter number&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;tagLft&quot;,
+      &quot;description&quot;: &quot;a unique 5 or 6 digit alpha-numeric code  for eartag in left ear&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;tagRt&quot;,
+      &quot;description&quot;: &quot;a unique 5 or 6 digit alpha-numeric code  for eartag in right ear&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;tagLftNum&quot;,
+      &quot;description&quot;: &quot;a unique 5 or 6 digit numeric code for  eartag in left ear&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;tagRtNum&quot;,
+      &quot;description&quot;: &quot;a unique 5 or 6 digit numeric code for  eartag in right ear&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;locX&quot;,
+      &quot;description&quot;: &quot;spatial x coordinate of the mother midden&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;locY&quot;,
+      &quot;description&quot;: &quot;spatial y coordinate of the mother midden&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;Ratio&quot;,
+      &quot;description&quot;: &quot;proportion of males in litter&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;Food&quot;,
+      &quot;description&quot;: &quot;numeric code indicating type of  experimental manipulation&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;KidE&quot;,
+      &quot;description&quot;: &quot;number of kids to emergence&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;KidW&quot;,
+      &quot;description&quot;: &quot;number of kids to weaning&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;KidF&quot;,
+      &quot;description&quot;: &quot;number of kids surviving to August 1&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;KidS&quot;,
+      &quot;description&quot;: &quot;number of kids surviving to May 1&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;grams&quot;,
+      &quot;name&quot;: &quot;MWt&quot;,
+      &quot;description&quot;: &quot;mother weight within 10 days after birth&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;grams&quot;,
+      &quot;name&quot;: &quot;MWt2&quot;,
+      &quot;description&quot;: &quot;mother weight 1 week either side of day  70&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;LitWt&quot;,
+      &quot;description&quot;: &quot;unknown&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;KidWt&quot;,
+      &quot;description&quot;: &quot;unknown&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;EX&quot;,
+      &quot;description&quot;: &quot;unknown&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;Pre&quot;,
+      &quot;description&quot;: &quot;litter in previous year? (1 = no, 2 =  yes)&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;LSize&quot;,
+      &quot;description&quot;: &quot;litter size&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;Lsc&quot;,
+      &quot;description&quot;: &quot;litter size code&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;FU&quot;,
+      &quot;description&quot;: &quot;mother killed by human causes&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;Mom&quot;,
+      &quot;description&quot;: &quot;unknown&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;MomB&quot;,
+      &quot;description&quot;: &quot;mother behavior&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;MomM&quot;,
+      &quot;description&quot;: &quot;fate of mother midden&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;MomS&quot;,
+      &quot;description&quot;: &quot;mother location in spring&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;MomF&quot;,
+      &quot;description&quot;: &quot;unknown&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;Marker&quot;,
+      &quot;description&quot;: &quot;unique combination of LN + YR + taglft +  tagrt&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;yyyy-mm-dd&quot;,
+      &quot;name&quot;: &quot;BDate&quot;,
+      &quot;description&quot;: &quot;estimated birthdate of any lost litters  (new in 1997)&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;Experiment&quot;,
+      &quot;description&quot;: &quot;unknown&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;col&quot;,
+      &quot;description&quot;: &quot;combination of colours in the left/right  ears&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;color_left&quot;,
+      &quot;description&quot;: &quot;color or combination of colours in the left ear&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;color_right&quot;,
+      &quot;description&quot;: &quot;color or combination of colours in the right ear&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;bhour&quot;,
+      &quot;description&quot;: &quot;hour that behaviour was recorded in the  field&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;bmin&quot;,
+      &quot;description&quot;: &quot;minute that behaviour was recorded in the  field&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;bsec&quot;,
+      &quot;description&quot;: &quot;second that behaviour was recorded in the  field&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;beh&quot;,
+      &quot;description&quot;: &quot;recorded behavior (see behavior codes)&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;det&quot;,
+      &quot;description&quot;: &quot;recorded behaviour detail (see behavior  codes)&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;exp&quot;,
+      &quot;description&quot;: &quot;relative spatial location/exposure (new  in 2004, previously entered occasionally in comments)&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;terr&quot;,
+      &quot;description&quot;: &quot;on territory? - Y or N&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;locX&quot;,
+      &quot;description&quot;: &quot;spatial x coordinate of the recorded  behaviour&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;locY&quot;,
+      &quot;description&quot;: &quot;spatial y coordinate of the recorded  behaviour&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;UTMX&quot;,
+      &quot;description&quot;: &quot;unknown&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;UTMY&quot;,
+      &quot;description&quot;: &quot;unknown&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;datasource&quot;,
+      &quot;description&quot;: &quot;unknown&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;Sex&quot;,
+      &quot;description&quot;: &quot;sex of the squirrel - Male (M) or Female  (F)&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;yyyy-mm-dd&quot;,
+      &quot;name&quot;: &quot;dateS&quot;,
+      &quot;description&quot;: &quot;start date, date of earliest record for  this squirrel regardless of file (should be tagging record)&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;f1&quot;,
+      &quot;description&quot;: &quot;first fate from earliest record for this  squirrel regardless of file (should be tagging record)&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;BYear&quot;,
+      &quot;description&quot;: &quot;birth year from juvenile tagging record -  if tagged as an adult female, the birth year is the previous year if she was  a small, pink non-breeder all year, otherwise, the birth year is assigned two  years previous.&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;bCert&quot;,
+      &quot;description&quot;: &quot;birth year certainty - yes if tagged as  juvenile, no otherwise&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;newGr&quot;,
+      &quot;description&quot;: &quot;grid from the last record for this  squirrel regardless of file&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;yyyy-mm-dd&quot;,
+      &quot;name&quot;: &quot;dateE&quot;,
+      &quot;description&quot;: &quot;end date, from the last record for this  squirrel regardless of file&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;f2&quot;,
+      &quot;description&quot;: &quot;last fate, from the last record for this  squirrel regardless of file&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;locX&quot;,
+      &quot;description&quot;: &quot;spatial x coordinate of last known  location&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;locY&quot;,
+      &quot;description&quot;: &quot;spatial y coordinate of last known  location&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;litter_id&quot;,
+      &quot;description&quot;: &quot;unique numeric identifier for each litter&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;squirrel_id&quot;,
+      &quot;description&quot;: &quot;the unique numeric identifier of the  juvenile&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;mother_id&quot;,
+      &quot;description&quot;: &quot;the unique numeric identifier of the  mother&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;yr&quot;,
+      &quot;description&quot;: &quot;year in which data were collected&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;br&quot;,
+      &quot;description&quot;: &quot;breeding status&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;yyyy-mm-dd&quot;,
+      &quot;name&quot;: &quot;date&quot;,
+      &quot;description&quot;: &quot;date of first nest entry&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;ln&quot;,
+      &quot;description&quot;: &quot;litter number&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;mTagLft&quot;,
+      &quot;description&quot;: &quot;a unique 5 or 6 digit alpha-numeric code for eartag in mother left ear&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;mTagRt&quot;,
+      &quot;description&quot;: &quot;a unique 5 or 6 digit alpha-numeric code for eartag in mother right ear&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;mTagLftNum&quot;,
+      &quot;description&quot;: &quot;a unique 5 or 6 digit numeric code for  eartag in mother left ear&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;mTagRtNum&quot;,
+      &quot;description&quot;: &quot;a unique 5 or 6 digit numeric code for  eartag in mother right ear&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;locX&quot;,
+      &quot;description&quot;: &quot;spatial x coordinate of mother midden&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;locY&quot;,
+      &quot;description&quot;: &quot;spatial y coordinate of mother midden&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;tagLft&quot;,
+      &quot;description&quot;: &quot;a unique 5 or 6 digit alpha-numeric code  for eartag in juvenile left ear&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;tagRt&quot;,
+      &quot;description&quot;: &quot;a unique 5 or 6 digit alpha-numeric code  for eartag in juvenile right ear&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;tagLftNum&quot;,
+      &quot;description&quot;: &quot;a unique 5 or 6 digit numeric code for  eartag in juvenile left ear&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;tagRtNum&quot;,
+      &quot;description&quot;: &quot;a unique 5 or 6 digit numeric code for  eartag in juvenile right ear&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;color&quot;,
+      &quot;description&quot;: &quot;combination of colours in the  juvenile left/right ears&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;color_left&quot;,
+      &quot;description&quot;: &quot;color or combination of colours in  juvenile left ear&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;color_right&quot;,
+      &quot;description&quot;: &quot;color or combination of colours in  juvenile right ear&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;NX1&quot;,
+      &quot;description&quot;: &quot;spatial x coordinate of nest 1 location&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;NY1&quot;,
+      &quot;description&quot;: &quot;spatial y coordinate of nest 1 location&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;NType1&quot;,
+      &quot;description&quot;: &quot;nest 1 construction type (new in 2004,  but entered retroactively for previous years)&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;NLoc1&quot;,
+      &quot;description&quot;: &quot;nest 1 spatial/territory characteristics&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;NX2&quot;,
+      &quot;description&quot;: &quot;spatial x coordinate of nest 2 location&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;NY2&quot;,
+      &quot;description&quot;: &quot;spatial y coordinate of nest 2 location&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;NType2&quot;,
+      &quot;description&quot;: &quot;nest 2 construction type&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;NLoc2&quot;,
+      &quot;description&quot;: &quot;nest 2 spatial/territory characteristics&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;yyyy-mm-dd&quot;,
+      &quot;name&quot;: &quot;BDate&quot;,
+      &quot;description&quot;: &quot;birth date&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;yyyy-mm-dd&quot;,
+      &quot;name&quot;: &quot;FieldBDate&quot;,
+      &quot;description&quot;: &quot;birth date determined in the field&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;grams&quot;,
+      &quot;name&quot;: &quot;KidWt&quot;,
+      &quot;description&quot;: &quot;mean litter weight (used in 1992 and 1993  only)&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;grams&quot;,
+      &quot;name&quot;: &quot;Weight&quot;,
+      &quot;description&quot;: &quot;weight of young at nest 1&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;mm&quot;,
+      &quot;name&quot;: &quot;BSizeN1&quot;,
+      &quot;description&quot;: &quot;zygomatic width at nest 1 (new in 1999)&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;Con1&quot;,
+      &quot;description&quot;: &quot;condition of young at nest 1&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;Flee1&quot;,
+      &quot;description&quot;: &quot;flea load of young at nest 1&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;ACT1&quot;,
+      &quot;description&quot;: &quot;activity of young at nest 1&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;yyyy-mm-dd&quot;,
+      &quot;name&quot;: &quot;TagDt&quot;,
+      &quot;description&quot;: &quot;date when tagged/nest 2&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;grams&quot;,
+      &quot;name&quot;: &quot;TagWt&quot;,
+      &quot;description&quot;: &quot;weight of young when tagged&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;mm&quot;,
+      &quot;name&quot;: &quot;BSizeN2&quot;,
+      &quot;description&quot;: &quot;zygomatic width at nest 2 (new in 1999)&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;Con2&quot;,
+      &quot;description&quot;: &quot;condition of young at nest 2&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;Flee2&quot;,
+      &quot;description&quot;: &quot;flea load of young at nest 2&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;Act2&quot;,
+      &quot;description&quot;: &quot;activity of young at nest 2&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;DateSeen&quot;,
+      &quot;description&quot;: &quot;day young seen out of nest&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;grams&quot;,
+      &quot;name&quot;: &quot;Wt70&quot;,
+      &quot;description&quot;: &quot;weight of young at 70 days&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;yyyy-mm-dd&quot;,
+      &quot;name&quot;: &quot;DateL&quot;,
+      &quot;description&quot;: &quot;date last seen&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;Wean&quot;,
+      &quot;description&quot;: &quot;weaning location&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;WSpat&quot;,
+      &quot;description&quot;: &quot;weaning spatial location&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;F&quot;,
+      &quot;description&quot;: &quot;fall location&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;FSpat&quot;,
+      &quot;description&quot;: &quot;fall spatial location&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;Spr&quot;,
+      &quot;description&quot;: &quot;spring location&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;SSpat&quot;,
+      &quot;description&quot;: &quot;spring spatial location&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;MCO&quot;,
+      &quot;description&quot;: &quot;unknown&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;BalWt_1&quot;,
+      &quot;description&quot;: &quot;unknown&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;BalWt_2&quot;,
+      &quot;description&quot;: &quot;unknown&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;DNA1&quot;,
+      &quot;description&quot;: &quot;8 alpha-numeric code to match DNA vials to squirrel identity&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;DNA2&quot;,
+      &quot;description&quot;: &quot;8 alpha-numeric code to match DNA vials to squirrel identity&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;squirrel_id&quot;,
+      &quot;description&quot;: &quot;a unique numeric identifier for each  individual&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;yyyy-mm-dd&quot;,
+      &quot;name&quot;: &quot;date&quot;,
+      &quot;description&quot;: &quot;date of census (05/15/YYYY or 08/15/YYYY)  or date of change in midden occupancy&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;obs&quot;,
+      &quot;description&quot;: &quot;two or three letters representing the observer initials&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;locX&quot;,
+      &quot;description&quot;: &quot;spatial x coordinate of midden&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;locY&quot;,
+      &quot;description&quot;: &quot;spatial y coordinate of midden&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;color_left&quot;,
+      &quot;description&quot;: &quot;color or combination of colours in left ear&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;color_right&quot;,
+      &quot;description&quot;: &quot;color or combination of colours in right ear&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;fate&quot;,
+      &quot;description&quot;: &quot;fate of midden ownership&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;mcon&quot;,
+      &quot;description&quot;: &quot;midden condition&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;act&quot;,
+      &quot;description&quot;: &quot;sign of activity at midden (new in 1997)&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;def&quot;,
+      &quot;description&quot;: &quot;strength of defence&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;ft&quot;,
+      &quot;description&quot;: &quot;15 (do not change, used by yearly  analysis programs)&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;cones&quot;,
+      &quot;description&quot;: &quot;cached cones on the midden&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;nest&quot;,
+      &quot;description&quot;: &quot;one or more nests within a 10m-diameter  circle around center of midden - Y or N&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;yyyy-mm-dd&quot;,
+      &quot;name&quot;: &quot;date&quot;,
+      &quot;description&quot;: &quot;date squirrel trapped&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;ft&quot;,
+      &quot;description&quot;: &quot;fate of the squirrel&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;color&quot;,
+      &quot;description&quot;: &quot;combination of colours in the left/right  ears&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;collar&quot;,
+      &quot;description&quot;: &quot;6 digit frequency of the radio collar  (e.g. 151348)&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;radio&quot;,
+      &quot;description&quot;: &quot;fate of the collar (new in 1996)&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;locX&quot;,
+      &quot;description&quot;: &quot;spatial x coordinate of midden trapped&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;locY&quot;,
+      &quot;description&quot;: &quot;spatial y coordinate of midden trapped&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;grams&quot;,
+      &quot;name&quot;: &quot;wgt&quot;,
+      &quot;description&quot;: &quot;calculation of squirrel weight (scale  weight-bagwt-collwt)&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;mm&quot;,
+      &quot;name&quot;: &quot;BSize&quot;,
+      &quot;description&quot;: &quot;zygomatic width/body size (new in 1999)&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;RC&quot;,
+      &quot;description&quot;: &quot;reproductive condition of the squirrel at  capture&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;NC&quot;,
+      &quot;description&quot;: &quot;nipple condition&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;CCon&quot;,
+      &quot;description&quot;: &quot;coat condition (discontinued in 1999)&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;R&quot;,
+      &quot;description&quot;: &quot;behavior on release&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;RattLocX&quot;,
+      &quot;description&quot;: &quot;unknown&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;RattLocY&quot;,
+      &quot;description&quot;: &quot;unknown&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;BrStatus&quot;,
+      &quot;description&quot;: &quot;breeding status&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;rhf&quot;,
+      &quot;description&quot;: &quot;unknown&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;st&quot;,
+      &quot;description&quot;: &quot;unknown&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;OldTagL&quot;,
+      &quot;description&quot;: &quot;old taglft when there is a retag (ft = 3  or 13) or when animal is new (ft = 2, 6, or 7)&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;OldTagR&quot;,
+      &quot;description&quot;: &quot;old tagrt&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;TagHist&quot;,
+      &quot;description&quot;: &quot;comment field&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;DataSource&quot;,
+      &quot;description&quot;: &quot;where data sourced from (new in 2004) -  databook or handheld&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;poop&quot;,
+      &quot;description&quot;: &quot;fecal vial number&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;hh:mm:ss&quot;,
+      &quot;name&quot;: &quot;ptime&quot;,
+      &quot;description&quot;: &quot;time that fecal sample taken&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;OldTagLAlpha&quot;,
+      &quot;description&quot;: &quot;unknown&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;OldTagRAlpha&quot;,
+      &quot;description&quot;: &quot;unknown&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;id&quot;,
+      &quot;description&quot;: &quot;unknownauto-filled with next available number&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;yyyy-mm-dd&quot;,
+      &quot;name&quot;: &quot;dates&quot;,
+      &quot;description&quot;: &quot;start date, date of earliest record for  this squirrel regardless of file (should be tagging record)&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;byear&quot;,
+      &quot;description&quot;: &quot;birth year from juvenile tagging record -  if tagged as an adult female, the birth year is the previous year if she was  a small, pink non-breeder all year, otherwise, the birth year is assigned two  years previous.&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;dam_id&quot;,
+      &quot;description&quot;: &quot;the unique numeric identifier of the mother&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;sire_id&quot;,
+      &quot;description&quot;: &quot;the unique numeric identifier of the father&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;bcert&quot;,
+      &quot;description&quot;: &quot;birth year certainty - yes if tagged as  juvenile, no otherwise&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;newgr&quot;,
+      &quot;description&quot;: &quot;grid from the last record for this  squirrel regardless of file&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;newsex&quot;,
+      &quot;description&quot;: &quot;unknown&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;yyyy-mm-dd&quot;,
+      &quot;name&quot;: &quot;datee&quot;,
+      &quot;description&quot;: &quot;end date, from the last record for this  squirrel regardless of file&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;old_squirrel_id&quot;,
+      &quot;description&quot;: &quot;old unique numeric identifier for each individual&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;new_squirrel_id&quot;,
+      &quot;description&quot;: &quot;new unique numeric identifier for each individual&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;change&quot;,
+      &quot;description&quot;: &quot;year in which database fix was made&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;color_left&quot;,
+      &quot;description&quot;: &quot;color or combination of colours in the  juvenile left ear&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;color_right&quot;,
+      &quot;description&quot;: &quot;color or combination of colours in the  juvenile right ear&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;yyyy-mm-dd hh:mm:ss&quot;,
+      &quot;name&quot;: &quot;date_created&quot;,
+      &quot;description&quot;: &quot;date that juvenile record was first  entered in database&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;dna1&quot;,
+      &quot;description&quot;: &quot;8 alpha-numeric code to match DNA vials  to squirrel identity&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;dna2&quot;,
+      &quot;description&quot;: &quot;8 alpha-numeric code to match DNA vials  to squirrel identity&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;jvariable1&quot;,
+      &quot;description&quot;: &quot;generic variable&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;jvariable2&quot;,
+      &quot;description&quot;: &quot;generic variable&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;jvariable3&quot;,
+      &quot;description&quot;: &quot;generic variable&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;jvariable4&quot;,
+      &quot;description&quot;: &quot;generic variable&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;yyyy-mm-dd hh:mm:ss&quot;,
+      &quot;name&quot;: &quot;last_updated&quot;,
+      &quot;description&quot;: &quot;date that juvenile record was last  updated in database&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;notch&quot;,
+      &quot;description&quot;: &quot;notch in ear of juvenile for  identification&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;sex&quot;,
+      &quot;description&quot;: &quot;sex of the juvenile - Male (M) or Female  (F)&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;grams&quot;,
+      &quot;name&quot;: &quot;weight&quot;,
+      &quot;description&quot;: &quot;weight of juvenile at nest 1&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;grams&quot;,
+      &quot;name&quot;: &quot;tagWT&quot;,
+      &quot;description&quot;: &quot;weight of juvenile when tagged&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;id&quot;,
+      &quot;description&quot;: &quot;unique numeric  identifier for each litter&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;nType1&quot;,
+      &quot;description&quot;: &quot;nest 1 construction type&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;nType2&quot;,
+      &quot;description&quot;: &quot;nest 2 construction type&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;yyyy-mm-dd&quot;,
+      &quot;name&quot;: &quot;date1&quot;,
+      &quot;description&quot;: &quot;date of first nest entry&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;yyyy-mm-dd hh:mm:ss&quot;,
+      &quot;name&quot;: &quot;date_created&quot;,
+      &quot;description&quot;: &quot;date that litter record was first entered  in database&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;food&quot;,
+      &quot;description&quot;: &quot;numeric code indicating type of  experimental manipulation&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;yyyy-mm-dd&quot;,
+      &quot;name&quot;: &quot;fieldBDate&quot;,
+      &quot;description&quot;: &quot;birth date&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;yyyy-mm-dd&quot;,
+      &quot;name&quot;: &quot;tagDt&quot;,
+      &quot;description&quot;: &quot;date when tagged/nest 2&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;yyyy-mm-dd hh:mm:ss&quot;,
+      &quot;name&quot;: &quot;last_updated&quot;,
+      &quot;description&quot;: &quot;date that litter record was last updated  in database&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;locx&quot;,
+      &quot;description&quot;: &quot;spatial x coordinate of the mother's  midden&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;locy&quot;,
+      &quot;description&quot;: &quot;spatial y coordinate of the mother's  midden&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;lvariable1&quot;,
+      &quot;description&quot;: &quot;generic variable&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;lvariable2&quot;,
+      &quot;description&quot;: &quot;generic variable&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;mTagLft&quot;,
+      &quot;description&quot;: &quot;a unique 5 or 6 digit alpha-numeric code  for eartag in mother left ear&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;mTagRt&quot;,
+      &quot;description&quot;: &quot;a unique 5 or 6 digit alpha-numeric code  for eartag in mother right ear&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;nx1&quot;,
+      &quot;description&quot;: &quot;spatial x coordinate of the nest 1&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;nx2&quot;,
+      &quot;description&quot;: &quot;spatial x coordinate of the nest 2&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;ny1&quot;,
+      &quot;description&quot;: &quot;spatial y coordinate of the nest 1&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;ny2&quot;,
+      &quot;description&quot;: &quot;spatial y coordinate of the nest 2&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;squirrel_id&quot;,
+      &quot;description&quot;: &quot;the unique numeric identifier of the  mother&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;Midden&quot;,
+      &quot;description&quot;: &quot;reference location of the midden where the peanut butter was added&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;LocX&quot;,
+      &quot;description&quot;: &quot;spatial x coordinate of midden where the peanut butter was added&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;LocY&quot;,
+      &quot;description&quot;: &quot;spatial y coordinate of midden where the peanut butter was added&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;yyyy-mm-dd&quot;,
+      &quot;name&quot;: &quot;Date&quot;,
+      &quot;description&quot;: &quot;date of peanut butter addition&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;OBS&quot;,
+      &quot;description&quot;: &quot;two or three letters representing the observer initials&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;kilograms&quot;,
+      &quot;name&quot;: &quot;PB_Remaining&quot;,
+      &quot;description&quot;: &quot;amount of peanut butter remaining in bucket&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;PB_Added&quot;,
+      &quot;description&quot;: &quot;peanut butter added? (1 = yes, 0 = no)&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;PB_Fate&quot;,
+      &quot;description&quot;: &quot;unknown&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;Nest&quot;,
+      &quot;description&quot;: &quot;nest in the bucket? (Y or N)&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;Mushrooms&quot;,
+      &quot;description&quot;: &quot;mushrooms in the bucket? (Y or N)&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;Contents&quot;,
+      &quot;description&quot;: &quot;comment field for other items in the bucket&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;PB_Remaining_code&quot;,
+      &quot;description&quot;: &quot;unknown&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;Sex&quot;,
+      &quot;description&quot;: &quot;sex of the squirrel -  Male (M) or Female (F)&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;sire_id&quot;,
+      &quot;description&quot;: &quot;the unique numeric identifier of the mother&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;dam_id&quot;,
+      &quot;description&quot;: &quot;the unique numeric identifier of the father&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;BYEAR&quot;,
+      &quot;description&quot;: &quot;birth year of the squirrel&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;Grid&quot;,
+      &quot;description&quot;: &quot;grid that squirrel was born on&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;f8&quot;,
+      &quot;description&quot;: &quot;unknown&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;f9&quot;,
+      &quot;description&quot;: &quot;unknown&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;f10&quot;,
+      &quot;description&quot;: &quot;unknown&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;f11&quot;,
+      &quot;description&quot;: &quot;unknown&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;f12&quot;,
+      &quot;description&quot;: &quot;unknown&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;f13&quot;,
+      &quot;description&quot;: &quot;unknown&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;f14&quot;,
+      &quot;description&quot;: &quot;unknown&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;f15&quot;,
+      &quot;description&quot;: &quot;unknown&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;f16&quot;,
+      &quot;description&quot;: &quot;unknown&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;f17&quot;,
+      &quot;description&quot;: &quot;unknown&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;squirrel_id&quot;,
+      &quot;description&quot;: &quot;unique numeric  identifier for each individual&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;grid&quot;,
+      &quot;description&quot;: &quot;grid that squirrel was born on&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;byear&quot;,
+      &quot;description&quot;: &quot;birth year of the squirrel&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;id&quot;,
+      &quot;description&quot;: &quot;unique numeric  identifier for each individual&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;yyyy-mm-dd&quot;,
+      &quot;name&quot;: &quot;census_date&quot;,
+      &quot;description&quot;: &quot;date of most recent census record for  squirrel&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;collar&quot;,
+      &quot;description&quot;: &quot;6 digit frequency of the radio collar  from most recent trapping record&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;colorlft&quot;,
+      &quot;description&quot;: &quot;color or combination of colours in the left ear&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;yyyy-mm-dd hh:mm:ss&quot;,
+      &quot;name&quot;: &quot;date_created&quot;,
+      &quot;description&quot;: &quot;date that squirrel record was first  created in database&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;gr&quot;,
+      &quot;description&quot;: &quot;grid that squirrel was most recently  trapped on&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;yyyy-mm-dd hh:mm:ss&quot;,
+      &quot;name&quot;: &quot;last_updated&quot;,
+      &quot;description&quot;: &quot;date that squirrel record was last  updated in database&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;locx&quot;,
+      &quot;description&quot;: &quot;spatial x coordinate of most recent  census location&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;locy&quot;,
+      &quot;description&quot;: &quot;spatial y coordinate of most recent  census location&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;reflo&quot;,
+      &quot;description&quot;: &quot;reference location from most recent  census -  up to 5 alpha-numeric  combinations including dots and minus signs&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;yyyy-mm-dd&quot;,
+      &quot;name&quot;: &quot;trap_date&quot;,
+      &quot;description&quot;: &quot;date of most recent trapping record for  squirrel&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;yyyy-mm-dd&quot;,
+      &quot;name&quot;: &quot;from_date&quot;,
+      &quot;description&quot;: &quot;date entered in database&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;grams&quot;,
+      &quot;name&quot;: &quot;bagWt&quot;,
+      &quot;description&quot;: &quot;weight of the handling bag&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;rattle&quot;,
+      &quot;description&quot;: &quot;unknown&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;grams&quot;,
+      &quot;name&quot;: &quot;collWt&quot;,
+      &quot;description&quot;: &quot;weight of the radio collar, if present  (should be 4g for regular collars or 8g for AXY collars)&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;color_fate&quot;,
+      &quot;description&quot;: &quot;fate of the color combination in squirrel ears&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;yyyy-mm-dd hh:mm:ss&quot;,
+      &quot;name&quot;: &quot;date_created&quot;,
+      &quot;description&quot;: &quot;date that trapping record was first  entered in database&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;radio&quot;,
+      &quot;description&quot;: &quot;fate of the collar&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;yyyy-mm-dd hh:mm:ss&quot;,
+      &quot;name&quot;: &quot;last_updated&quot;,
+      &quot;description&quot;: &quot;date that trapping record was last  updated in database&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;locx&quot;,
+      &quot;description&quot;: &quot;spatial x coordinate of midden trapped&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;locy&quot;,
+      &quot;description&quot;: &quot;spatial y coordinate of midden trapped&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;nipple&quot;,
+      &quot;description&quot;: &quot;nipple condition&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;obs&quot;,
+      &quot;description&quot;: &quot;two or three letters representing trapper initials&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;rep_con&quot;,
+      &quot;description&quot;: &quot;reproductive condition of the squirrel at  capture&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;grams&quot;,
+      &quot;name&quot;: &quot;scale_weight&quot;,
+      &quot;description&quot;: &quot;total weight with bag&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;tvariable1&quot;,
+      &quot;description&quot;: &quot;generic variable - starting in 2018 this  column contains the 4-digit fecal vial number&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: &quot;hh.mm&quot;,
+      &quot;name&quot;: &quot;tvariable2&quot;,
+      &quot;description&quot;: &quot;generic variable - starting in 2018 this  column contains the time the fecal sample was taken&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;tvariable3&quot;,
+      &quot;description&quot;: &quot;generic variable&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;tvariable4&quot;,
+      &quot;description&quot;: &quot;generic variable&quot;
+    },
+    {
+      &quot;type&quot;: &quot;PropertyValue&quot;,
+      &quot;unitText&quot;: null,
+      &quot;name&quot;: &quot;tvariable5&quot;,
+      &quot;description&quot;: &quot;generic variable&quot;
+    }
+  ],
+  &quot;distribution&quot;: [
+    {
+      &quot;type&quot;: &quot;DataDownload&quot;,
+      &quot;name&quot;: &quot;behaviour&quot;,
+      &quot;contentUrl&quot;: null,
+      &quot;fileFormat&quot;: &quot;csv&quot;
+    },
+    {
+      &quot;type&quot;: &quot;DataDownload&quot;,
+      &quot;name&quot;: &quot;census&quot;,
+      &quot;contentUrl&quot;: null,
+      &quot;fileFormat&quot;: &quot;csv&quot;
+    },
+    {
+      &quot;type&quot;: &quot;DataDownload&quot;,
+      &quot;name&quot;: &quot;cones&quot;,
+      &quot;contentUrl&quot;: null,
+      &quot;fileFormat&quot;: &quot;csv&quot;
+    },
+    {
+      &quot;type&quot;: &quot;DataDownload&quot;,
+      &quot;name&quot;: &quot;dbaadmums&quot;,
+      &quot;contentUrl&quot;: null,
+      &quot;fileFormat&quot;: &quot;csv&quot;
+    },
+    {
+      &quot;type&quot;: &quot;DataDownload&quot;,
+      &quot;name&quot;: &quot;dbabehaviour&quot;,
+      &quot;contentUrl&quot;: null,
+      &quot;fileFormat&quot;: &quot;csv&quot;
+    },
+    {
+      &quot;type&quot;: &quot;DataDownload&quot;,
+      &quot;name&quot;: &quot;dbaflastall&quot;,
+      &quot;contentUrl&quot;: null,
+      &quot;fileFormat&quot;: &quot;csv&quot;
+    },
+    {
+      &quot;type&quot;: &quot;DataDownload&quot;,
+      &quot;name&quot;: &quot;dbajuvenile&quot;,
+      &quot;contentUrl&quot;: null,
+      &quot;fileFormat&quot;: &quot;csv&quot;
+    },
+    {
+      &quot;type&quot;: &quot;DataDownload&quot;,
+      &quot;name&quot;: &quot;dbamidden&quot;,
+      &quot;contentUrl&quot;: null,
+      &quot;fileFormat&quot;: &quot;csv&quot;
+    },
+    {
+      &quot;type&quot;: &quot;DataDownload&quot;,
+      &quot;name&quot;: &quot;dbatrapping&quot;,
+      &quot;contentUrl&quot;: null,
+      &quot;fileFormat&quot;: &quot;csv&quot;
+    },
+    {
+      &quot;type&quot;: &quot;DataDownload&quot;,
+      &quot;name&quot;: &quot;flastall&quot;,
+      &quot;contentUrl&quot;: null,
+      &quot;fileFormat&quot;: &quot;csv&quot;
+    },
+    {
+      &quot;type&quot;: &quot;DataDownload&quot;,
+      &quot;name&quot;: &quot;flastall2&quot;,
+      &quot;contentUrl&quot;: null,
+      &quot;fileFormat&quot;: &quot;csv&quot;
+    },
+    {
+      &quot;type&quot;: &quot;DataDownload&quot;,
+      &quot;name&quot;: &quot;historic_squirrel_ids&quot;,
+      &quot;contentUrl&quot;: null,
+      &quot;fileFormat&quot;: &quot;csv&quot;
+    },
+    {
+      &quot;type&quot;: &quot;DataDownload&quot;,
+      &quot;name&quot;: &quot;juvenile&quot;,
+      &quot;contentUrl&quot;: null,
+      &quot;fileFormat&quot;: &quot;csv&quot;
+    },
+    {
+      &quot;type&quot;: &quot;DataDownload&quot;,
+      &quot;name&quot;: &quot;litter&quot;,
+      &quot;contentUrl&quot;: null,
+      &quot;fileFormat&quot;: &quot;csv&quot;
+    },
+    {
+      &quot;type&quot;: &quot;DataDownload&quot;,
+      &quot;name&quot;: &quot;pb_data&quot;,
+      &quot;contentUrl&quot;: null,
+      &quot;fileFormat&quot;: &quot;csv&quot;
+    },
+    {
+      &quot;type&quot;: &quot;DataDownload&quot;,
+      &quot;name&quot;: &quot;pedigree&quot;,
+      &quot;contentUrl&quot;: null,
+      &quot;fileFormat&quot;: &quot;csv&quot;
+    },
+    {
+      &quot;type&quot;: &quot;DataDownload&quot;,
+      &quot;name&quot;: &quot;pedigree_clean&quot;,
+      &quot;contentUrl&quot;: null,
+      &quot;fileFormat&quot;: &quot;csv&quot;
+    },
+    {
+      &quot;type&quot;: &quot;DataDownload&quot;,
+      &quot;name&quot;: &quot;squirrel&quot;,
+      &quot;contentUrl&quot;: null,
+      &quot;fileFormat&quot;: &quot;csv&quot;
+    },
+    {
+      &quot;type&quot;: &quot;DataDownload&quot;,
+      &quot;name&quot;: &quot;squirrel_alias&quot;,
+      &quot;contentUrl&quot;: null,
+      &quot;fileFormat&quot;: &quot;csv&quot;
+    },
+    {
+      &quot;type&quot;: &quot;DataDownload&quot;,
+      &quot;name&quot;: &quot;trapping&quot;,
+      &quot;contentUrl&quot;: null,
+      &quot;fileFormat&quot;: &quot;csv&quot;
+    }
+  ]
+}
+</code>
+      </pre>
+    </div>
+
+    <script>
+      var mymap = L.map('map').setView([61.1697665, -138.4818545], 1);
+
+      L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        maxZoom: 18,
+        id: 'mapbox.streets',
+        accessToken: 'pk.eyJ1IjoiYnJ5Y2VtIiwiYSI6ImxXeXloYWMifQ.-WnjEqej0kbv101nt6b_KQ'
+      }).addTo(mymap);
+
+      var polygon = L.polygon([[ 61.59356, -137.498578], [ 60.745973, -137.498578], [ 60.745973, -139.465131], [ 61.59356, -139.465131]]).addTo(mymap);
+    </script>
+  </body>
+</html>

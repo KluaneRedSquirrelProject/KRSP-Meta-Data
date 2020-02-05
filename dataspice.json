@@ -1,0 +1,2037 @@
+{
+  "@context": "http://schema.org",
+  "type": "Dataset",
+  "name": "Kluane Red Squirrel Project Database",
+  "creator": [
+    {
+      "type": "Person",
+      "id": "0000-0001-6317-038X",
+      "givenName": "Stan",
+      "familyName": "Boutin",
+      "email": "sboutin@ualberta.ca",
+      "affiliation": "University of Alberta"
+    },
+    {
+      "type": "Person",
+      "id": "0000-0001-7323-2572",
+      "givenName": "Andrew",
+      "familyName": "McAdam",
+      "email": "andrew.mcadam@colorado.edu",
+      "affiliation": "University of Colorado"
+    },
+    {
+      "type": "Person",
+      "id": "0000-0002-3058-265X",
+      "givenName": "Ben",
+      "familyName": "Dantzer",
+      "email": "dantzer@umich.edu",
+      "affiliation": "University of Michigan"
+    },
+    {
+      "type": "Person",
+      "id": "0000-0003-0849-7181",
+      "givenName": "Jeffrey",
+      "familyName": "Lane",
+      "email": "jeffrey.lane@usask.ca",
+      "affiliation": "University of Saskatchewan"
+    }
+  ],
+  "description": "The Kluane Red Squirrel Project is a long-term individual-based time-series of red squirrels in the southwestern Yukon Territory of Canada.  The data are organized into 20 tables within a relational mySQL database.  Individual tables are not available for download here as csv files.  If you are interested in accessing the data please contact Andrew McAdam at the University of Colorado.  Attributes are listed for all variables included within the 20 data tables.  Coding descriptions and more detailed descriptions of the variables can be found within the KRSP Database Appendix.",
+  "datePublished": "2020-02-04",
+  "keywords": ["ecology", "evolution", "energetics", " behaviour", "physiology", "life history", "genetics", "red squirrel", "Tamiasciurus hudsonicus", "rodent", "mammal", "territorial"],
+  "funder": "Natural Sciences and Engineering Research  Council of Canada, National Science Foundation, Polar Knowledge Canada",
+  "temporalCoverage": "1989/2018",
+  "license": null,
+  "spatialCoverage": {
+    "type": "Place",
+    "name": "This data was collected from study sites in  Kluane National Park in the southwestern Yukon, Canada. The  general study area is located in a broad glacial valley (Shakwak Trench) that  is approximately 900 m above sea level.",
+    "geo": {
+      "type": "GeoShape",
+      "box": "61.59356 -137.498578 60.745973 -139.465131"
+    }
+  },
+  "variableMeasured": [
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "id",
+      "description": "auto-filled with next available number"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "version",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "behaviour",
+      "description": "recorded behavior (see behavior codes)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "color_left",
+      "description": "color or combination of colours in the  left ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "color_right",
+      "description": "color or combination of colours in the  right ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "comments",
+      "description": "comments"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "date",
+      "description": "date that behavior was recorded in the  field"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd hh:mm:ss",
+      "name": "date_created",
+      "description": "date that behavior record was first  entered in database"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "detail",
+      "description": "recorded behaviour detail (see behavior  codes)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "grid",
+      "description": "two or three letters representing the  grid on which the data were collected"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "hand",
+      "description": "indication of whether the squirrel was  eating left or right handed"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd hh:mm:ss",
+      "name": "last_updated",
+      "description": "date that behavior was last updated in  database"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locx",
+      "description": "spatial x coordinate of the recorded  behaviour"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locy",
+      "description": "spatial y coordinate of the recorded  behaviour"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "mode",
+      "description": "the manner in which the data were collected"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "observer",
+      "description": "two or three letters representing  initials of observer"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "squirrel_id",
+      "description": "unique numeric identifier for each  individual"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "tag_left",
+      "description": "a unique 5 or 6 digit alpha-numeric code  for eartag in left ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "tag_right",
+      "description": "a unique 5 or 6 digit alpha-numeric code  for eartag in right ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "hh:mm:ss",
+      "name": "time",
+      "description": "time that behaviour was recorded in the  field"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "census_date",
+      "description": "date of census  (05/15/YYYY or 08/15/YYYY) or date of change in ownership"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "colorlft",
+      "description": "color or combination of colours in the  left ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "colorrt",
+      "description": "color or combination of colours in the right ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd hh:mm:ss",
+      "name": "date_created",
+      "description": "date that census record was first entered  in database"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "gr",
+      "description": "two or three letters representing the  grid on which the data were collected"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd hh:mm:ss",
+      "name": "last_updated",
+      "description": "date that census record was last updated  in database"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locx",
+      "description": "spatial x coordinate of midden owned"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locy",
+      "description": "spatial y coordinate of midden owned"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "obs",
+      "description": "two or three letters representing the  observer initials"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "reflo",
+      "description": "reference location of the midden up to 5  alpha-numeric combinations including dots and minus signs"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "sex",
+      "description": "sex of the squirrel - Male (M) or Female  (F)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "sq_fate",
+      "description": "numeric code indicating the fate of the  squirrel in the census"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "taglft",
+      "description": "a unique 5 or 6 digit alpha-numeric code  for eartag in left ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "tagrt",
+      "description": "a unique 5 or 6 digit alpha-numeric code  for eartag in right ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "trap",
+      "description": "were the traps on the midden hung in the  fall - Y or N"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Grid",
+      "description": "two or three letters  representing the grid on which the data were collected"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Year",
+      "description": "year in which data were collected"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Stake",
+      "description": "grid stake nearest the cone count tree"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "LocX",
+      "description": "spatial x coordinate of the cone count  tree"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "LocY",
+      "description": "spatial y coordinate of the cone count  tree"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "cm",
+      "name": "DBH",
+      "description": "diameter at breast height of cone count  tree (not updated each year)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "m",
+      "name": "Distance",
+      "description": "distance of cone count tree from the  nearest grid stake"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "degrees",
+      "name": "Direction",
+      "description": "direction of cone count tree from nearest  grid stake"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Per",
+      "description": "percent cover of cones in top 3 m of tree"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "New_Tree",
+      "description": "is this a new tree counted for the first  time? - Y or N"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Status",
+      "description": "status of cone count tree relative to  amount of bark beetle damage"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "Count_Date",
+      "description": "date on which the cones were counted"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "NumNew",
+      "description": "number of new cones in top 3 m of tree"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Comments",
+      "description": "comments"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Grid",
+      "description": "two or three letters representing the  grid on which the data were collected"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "BR",
+      "description": "breeding status"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "YR",
+      "description": "year in which data were collected"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Age",
+      "description": "age of female in current year"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "LN",
+      "description": "litter number"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "tagLft",
+      "description": "a unique 5 or 6 digit alpha-numeric code  for eartag in left ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "tagRt",
+      "description": "a unique 5 or 6 digit alpha-numeric code  for eartag in right ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "tagLftNum",
+      "description": "a unique 5 or 6 digit numeric code for  eartag in left ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "tagRtNum",
+      "description": "a unique 5 or 6 digit numeric code for  eartag in right ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locX",
+      "description": "spatial x coordinate of the mother midden"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locY",
+      "description": "spatial y coordinate of the mother midden"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Ratio",
+      "description": "proportion of males in litter"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Food",
+      "description": "numeric code indicating type of  experimental manipulation"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "KidE",
+      "description": "number of kids to emergence"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "KidW",
+      "description": "number of kids to weaning"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "KidF",
+      "description": "number of kids surviving to August 1"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "KidS",
+      "description": "number of kids surviving to May 1"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "grams",
+      "name": "MWt",
+      "description": "mother weight within 10 days after birth"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "grams",
+      "name": "MWt2",
+      "description": "mother weight 1 week either side of day  70"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "LitWt",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "KidWt",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "EX",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Pre",
+      "description": "litter in previous year? (1 = no, 2 =  yes)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "LSize",
+      "description": "litter size"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Lsc",
+      "description": "litter size code"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "FU",
+      "description": "mother killed by human causes"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Mom",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "MomB",
+      "description": "mother behavior"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "MomM",
+      "description": "fate of mother midden"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "MomS",
+      "description": "mother location in spring"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "MomF",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Marker",
+      "description": "unique combination of LN + YR + taglft +  tagrt"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "BDate",
+      "description": "estimated birthdate of any lost litters  (new in 1997)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Experiment",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "col",
+      "description": "combination of colours in the left/right  ears"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "color_left",
+      "description": "color or combination of colours in the left ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "color_right",
+      "description": "color or combination of colours in the right ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "bhour",
+      "description": "hour that behaviour was recorded in the  field"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "bmin",
+      "description": "minute that behaviour was recorded in the  field"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "bsec",
+      "description": "second that behaviour was recorded in the  field"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "beh",
+      "description": "recorded behavior (see behavior codes)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "det",
+      "description": "recorded behaviour detail (see behavior  codes)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "exp",
+      "description": "relative spatial location/exposure (new  in 2004, previously entered occasionally in comments)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "terr",
+      "description": "on territory? - Y or N"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locX",
+      "description": "spatial x coordinate of the recorded  behaviour"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locY",
+      "description": "spatial y coordinate of the recorded  behaviour"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "UTMX",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "UTMY",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "datasource",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Sex",
+      "description": "sex of the squirrel - Male (M) or Female  (F)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "dateS",
+      "description": "start date, date of earliest record for  this squirrel regardless of file (should be tagging record)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "f1",
+      "description": "first fate from earliest record for this  squirrel regardless of file (should be tagging record)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "BYear",
+      "description": "birth year from juvenile tagging record -  if tagged as an adult female, the birth year is the previous year if she was  a small, pink non-breeder all year, otherwise, the birth year is assigned two  years previous."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "bCert",
+      "description": "birth year certainty - yes if tagged as  juvenile, no otherwise"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "newGr",
+      "description": "grid from the last record for this  squirrel regardless of file"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "dateE",
+      "description": "end date, from the last record for this  squirrel regardless of file"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "f2",
+      "description": "last fate, from the last record for this  squirrel regardless of file"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locX",
+      "description": "spatial x coordinate of last known  location"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locY",
+      "description": "spatial y coordinate of last known  location"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "litter_id",
+      "description": "unique numeric identifier for each litter"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "squirrel_id",
+      "description": "the unique numeric identifier of the  juvenile"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "mother_id",
+      "description": "the unique numeric identifier of the  mother"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "yr",
+      "description": "year in which data were collected"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "br",
+      "description": "breeding status"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "date",
+      "description": "date of first nest entry"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "ln",
+      "description": "litter number"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "mTagLft",
+      "description": "a unique 5 or 6 digit alpha-numeric code for eartag in mother left ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "mTagRt",
+      "description": "a unique 5 or 6 digit alpha-numeric code for eartag in mother right ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "mTagLftNum",
+      "description": "a unique 5 or 6 digit numeric code for  eartag in mother left ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "mTagRtNum",
+      "description": "a unique 5 or 6 digit numeric code for  eartag in mother right ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locX",
+      "description": "spatial x coordinate of mother midden"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locY",
+      "description": "spatial y coordinate of mother midden"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "tagLft",
+      "description": "a unique 5 or 6 digit alpha-numeric code  for eartag in juvenile left ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "tagRt",
+      "description": "a unique 5 or 6 digit alpha-numeric code  for eartag in juvenile right ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "tagLftNum",
+      "description": "a unique 5 or 6 digit numeric code for  eartag in juvenile left ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "tagRtNum",
+      "description": "a unique 5 or 6 digit numeric code for  eartag in juvenile right ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "color",
+      "description": "combination of colours in the  juvenile left/right ears"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "color_left",
+      "description": "color or combination of colours in  juvenile left ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "color_right",
+      "description": "color or combination of colours in  juvenile right ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "NX1",
+      "description": "spatial x coordinate of nest 1 location"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "NY1",
+      "description": "spatial y coordinate of nest 1 location"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "NType1",
+      "description": "nest 1 construction type (new in 2004,  but entered retroactively for previous years)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "NLoc1",
+      "description": "nest 1 spatial/territory characteristics"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "NX2",
+      "description": "spatial x coordinate of nest 2 location"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "NY2",
+      "description": "spatial y coordinate of nest 2 location"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "NType2",
+      "description": "nest 2 construction type"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "NLoc2",
+      "description": "nest 2 spatial/territory characteristics"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "BDate",
+      "description": "birth date"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "FieldBDate",
+      "description": "birth date determined in the field"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "grams",
+      "name": "KidWt",
+      "description": "mean litter weight (used in 1992 and 1993  only)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "grams",
+      "name": "Weight",
+      "description": "weight of young at nest 1"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "mm",
+      "name": "BSizeN1",
+      "description": "zygomatic width at nest 1 (new in 1999)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Con1",
+      "description": "condition of young at nest 1"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Flee1",
+      "description": "flea load of young at nest 1"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "ACT1",
+      "description": "activity of young at nest 1"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "TagDt",
+      "description": "date when tagged/nest 2"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "grams",
+      "name": "TagWt",
+      "description": "weight of young when tagged"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "mm",
+      "name": "BSizeN2",
+      "description": "zygomatic width at nest 2 (new in 1999)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Con2",
+      "description": "condition of young at nest 2"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Flee2",
+      "description": "flea load of young at nest 2"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Act2",
+      "description": "activity of young at nest 2"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "DateSeen",
+      "description": "day young seen out of nest"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "grams",
+      "name": "Wt70",
+      "description": "weight of young at 70 days"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "DateL",
+      "description": "date last seen"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Wean",
+      "description": "weaning location"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "WSpat",
+      "description": "weaning spatial location"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "F",
+      "description": "fall location"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "FSpat",
+      "description": "fall spatial location"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Spr",
+      "description": "spring location"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "SSpat",
+      "description": "spring spatial location"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "MCO",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "BalWt_1",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "BalWt_2",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "DNA1",
+      "description": "8 alpha-numeric code to match DNA vials to squirrel identity"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "DNA2",
+      "description": "8 alpha-numeric code to match DNA vials to squirrel identity"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "squirrel_id",
+      "description": "a unique numeric identifier for each  individual"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "date",
+      "description": "date of census (05/15/YYYY or 08/15/YYYY)  or date of change in midden occupancy"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "obs",
+      "description": "two or three letters representing the observer initials"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locX",
+      "description": "spatial x coordinate of midden"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locY",
+      "description": "spatial y coordinate of midden"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "color_left",
+      "description": "color or combination of colours in left ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "color_right",
+      "description": "color or combination of colours in right ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "fate",
+      "description": "fate of midden ownership"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "mcon",
+      "description": "midden condition"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "act",
+      "description": "sign of activity at midden (new in 1997)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "def",
+      "description": "strength of defence"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "ft",
+      "description": "15 (do not change, used by yearly  analysis programs)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "cones",
+      "description": "cached cones on the midden"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "nest",
+      "description": "one or more nests within a 10m-diameter  circle around center of midden - Y or N"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "date",
+      "description": "date squirrel trapped"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "ft",
+      "description": "fate of the squirrel"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "color",
+      "description": "combination of colours in the left/right  ears"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "collar",
+      "description": "6 digit frequency of the radio collar  (e.g. 151348)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "radio",
+      "description": "fate of the collar (new in 1996)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locX",
+      "description": "spatial x coordinate of midden trapped"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locY",
+      "description": "spatial y coordinate of midden trapped"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "grams",
+      "name": "wgt",
+      "description": "calculation of squirrel weight (scale  weight-bagwt-collwt)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "mm",
+      "name": "BSize",
+      "description": "zygomatic width/body size (new in 1999)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "RC",
+      "description": "reproductive condition of the squirrel at  capture"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "NC",
+      "description": "nipple condition"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "CCon",
+      "description": "coat condition (discontinued in 1999)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "R",
+      "description": "behavior on release"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "RattLocX",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "RattLocY",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "BrStatus",
+      "description": "breeding status"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "rhf",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "st",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "OldTagL",
+      "description": "old taglft when there is a retag (ft = 3  or 13) or when animal is new (ft = 2, 6, or 7)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "OldTagR",
+      "description": "old tagrt"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "TagHist",
+      "description": "comment field"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "DataSource",
+      "description": "where data sourced from (new in 2004) -  databook or handheld"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "poop",
+      "description": "fecal vial number"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "hh:mm:ss",
+      "name": "ptime",
+      "description": "time that fecal sample taken"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "OldTagLAlpha",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "OldTagRAlpha",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "id",
+      "description": "unknownauto-filled with next available number"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "dates",
+      "description": "start date, date of earliest record for  this squirrel regardless of file (should be tagging record)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "byear",
+      "description": "birth year from juvenile tagging record -  if tagged as an adult female, the birth year is the previous year if she was  a small, pink non-breeder all year, otherwise, the birth year is assigned two  years previous."
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "dam_id",
+      "description": "the unique numeric identifier of the mother"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "sire_id",
+      "description": "the unique numeric identifier of the father"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "bcert",
+      "description": "birth year certainty - yes if tagged as  juvenile, no otherwise"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "newgr",
+      "description": "grid from the last record for this  squirrel regardless of file"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "newsex",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "datee",
+      "description": "end date, from the last record for this  squirrel regardless of file"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "old_squirrel_id",
+      "description": "old unique numeric identifier for each individual"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "new_squirrel_id",
+      "description": "new unique numeric identifier for each individual"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "change",
+      "description": "year in which database fix was made"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "color_left",
+      "description": "color or combination of colours in the  juvenile left ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "color_right",
+      "description": "color or combination of colours in the  juvenile right ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd hh:mm:ss",
+      "name": "date_created",
+      "description": "date that juvenile record was first  entered in database"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "dna1",
+      "description": "8 alpha-numeric code to match DNA vials  to squirrel identity"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "dna2",
+      "description": "8 alpha-numeric code to match DNA vials  to squirrel identity"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "jvariable1",
+      "description": "generic variable"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "jvariable2",
+      "description": "generic variable"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "jvariable3",
+      "description": "generic variable"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "jvariable4",
+      "description": "generic variable"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd hh:mm:ss",
+      "name": "last_updated",
+      "description": "date that juvenile record was last  updated in database"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "notch",
+      "description": "notch in ear of juvenile for  identification"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "sex",
+      "description": "sex of the juvenile - Male (M) or Female  (F)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "grams",
+      "name": "weight",
+      "description": "weight of juvenile at nest 1"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "grams",
+      "name": "tagWT",
+      "description": "weight of juvenile when tagged"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "id",
+      "description": "unique numeric  identifier for each litter"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "nType1",
+      "description": "nest 1 construction type"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "nType2",
+      "description": "nest 2 construction type"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "date1",
+      "description": "date of first nest entry"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd hh:mm:ss",
+      "name": "date_created",
+      "description": "date that litter record was first entered  in database"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "food",
+      "description": "numeric code indicating type of  experimental manipulation"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "fieldBDate",
+      "description": "birth date"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "tagDt",
+      "description": "date when tagged/nest 2"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd hh:mm:ss",
+      "name": "last_updated",
+      "description": "date that litter record was last updated  in database"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locx",
+      "description": "spatial x coordinate of the mother's  midden"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locy",
+      "description": "spatial y coordinate of the mother's  midden"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "lvariable1",
+      "description": "generic variable"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "lvariable2",
+      "description": "generic variable"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "mTagLft",
+      "description": "a unique 5 or 6 digit alpha-numeric code  for eartag in mother left ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "mTagRt",
+      "description": "a unique 5 or 6 digit alpha-numeric code  for eartag in mother right ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "nx1",
+      "description": "spatial x coordinate of the nest 1"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "nx2",
+      "description": "spatial x coordinate of the nest 2"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "ny1",
+      "description": "spatial y coordinate of the nest 1"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "ny2",
+      "description": "spatial y coordinate of the nest 2"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "squirrel_id",
+      "description": "the unique numeric identifier of the  mother"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Midden",
+      "description": "reference location of the midden where the peanut butter was added"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "LocX",
+      "description": "spatial x coordinate of midden where the peanut butter was added"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "LocY",
+      "description": "spatial y coordinate of midden where the peanut butter was added"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "Date",
+      "description": "date of peanut butter addition"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "OBS",
+      "description": "two or three letters representing the observer initials"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "kilograms",
+      "name": "PB_Remaining",
+      "description": "amount of peanut butter remaining in bucket"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "PB_Added",
+      "description": "peanut butter added? (1 = yes, 0 = no)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "PB_Fate",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Nest",
+      "description": "nest in the bucket? (Y or N)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Mushrooms",
+      "description": "mushrooms in the bucket? (Y or N)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Contents",
+      "description": "comment field for other items in the bucket"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "PB_Remaining_code",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Sex",
+      "description": "sex of the squirrel -  Male (M) or Female (F)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "sire_id",
+      "description": "the unique numeric identifier of the mother"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "dam_id",
+      "description": "the unique numeric identifier of the father"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "BYEAR",
+      "description": "birth year of the squirrel"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "Grid",
+      "description": "grid that squirrel was born on"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "f8",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "f9",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "f10",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "f11",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "f12",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "f13",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "f14",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "f15",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "f16",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "f17",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "squirrel_id",
+      "description": "unique numeric  identifier for each individual"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "grid",
+      "description": "grid that squirrel was born on"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "byear",
+      "description": "birth year of the squirrel"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "id",
+      "description": "unique numeric  identifier for each individual"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "census_date",
+      "description": "date of most recent census record for  squirrel"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "collar",
+      "description": "6 digit frequency of the radio collar  from most recent trapping record"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "colorlft",
+      "description": "color or combination of colours in the left ear"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd hh:mm:ss",
+      "name": "date_created",
+      "description": "date that squirrel record was first  created in database"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "gr",
+      "description": "grid that squirrel was most recently  trapped on"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd hh:mm:ss",
+      "name": "last_updated",
+      "description": "date that squirrel record was last  updated in database"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locx",
+      "description": "spatial x coordinate of most recent  census location"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locy",
+      "description": "spatial y coordinate of most recent  census location"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "reflo",
+      "description": "reference location from most recent  census -  up to 5 alpha-numeric  combinations including dots and minus signs"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "trap_date",
+      "description": "date of most recent trapping record for  squirrel"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd",
+      "name": "from_date",
+      "description": "date entered in database"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "grams",
+      "name": "bagWt",
+      "description": "weight of the handling bag"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "rattle",
+      "description": "unknown"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "grams",
+      "name": "collWt",
+      "description": "weight of the radio collar, if present  (should be 4g for regular collars or 8g for AXY collars)"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "color_fate",
+      "description": "fate of the color combination in squirrel ears"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd hh:mm:ss",
+      "name": "date_created",
+      "description": "date that trapping record was first  entered in database"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "radio",
+      "description": "fate of the collar"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "yyyy-mm-dd hh:mm:ss",
+      "name": "last_updated",
+      "description": "date that trapping record was last  updated in database"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locx",
+      "description": "spatial x coordinate of midden trapped"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "locy",
+      "description": "spatial y coordinate of midden trapped"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "nipple",
+      "description": "nipple condition"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "obs",
+      "description": "two or three letters representing trapper initials"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "rep_con",
+      "description": "reproductive condition of the squirrel at  capture"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "grams",
+      "name": "scale_weight",
+      "description": "total weight with bag"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "tvariable1",
+      "description": "generic variable - starting in 2018 this  column contains the 4-digit fecal vial number"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "hh.mm",
+      "name": "tvariable2",
+      "description": "generic variable - starting in 2018 this  column contains the time the fecal sample was taken"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "tvariable3",
+      "description": "generic variable"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "tvariable4",
+      "description": "generic variable"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": null,
+      "name": "tvariable5",
+      "description": "generic variable"
+    }
+  ],
+  "distribution": [
+    {
+      "type": "DataDownload",
+      "name": "behaviour",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "census",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "cones",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "dbaadmums",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "dbabehaviour",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "dbaflastall",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "dbajuvenile",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "dbamidden",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "dbatrapping",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "flastall",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "flastall2",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "historic_squirrel_ids",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "juvenile",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "litter",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "pb_data",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "pedigree",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "pedigree_clean",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "squirrel",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "squirrel_alias",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    },
+    {
+      "type": "DataDownload",
+      "name": "trapping",
+      "contentUrl": null,
+      "fileFormat": "csv"
+    }
+  ]
+}
